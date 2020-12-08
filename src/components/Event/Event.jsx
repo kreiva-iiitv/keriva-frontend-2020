@@ -6,8 +6,7 @@ const About = () => {
   return (
     <React.Fragment>
       <Header />
-      Go to {'  ->   '}
-      <a href="/">Home</a>
+      	For events page
       <Footer />
     </React.Fragment>
   );

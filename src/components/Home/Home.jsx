@@ -6,8 +6,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Header />
-      Go to {'  ->   '}
-      <a href="/about">About</a>
+      	Add homepage components in ./components/Home
       <Footer />
     </React.Fragment>
   );
