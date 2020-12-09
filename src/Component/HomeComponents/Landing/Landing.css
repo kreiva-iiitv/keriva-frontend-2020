@@ -17,12 +17,13 @@
     /* padding: 0px; */
     /* margin: 0px; */
     /* line-height: 100px; */
-    z-index: -1;
+    z-index: 20;
 
     /* padding : 0; */
     /* margin : 0; */
     /* line-height : 80%; */
     font-family: Noir;
+    padding-top: 19%;
 }
 
 .virtual{
@@ -37,19 +38,18 @@
 
 .parent{
     position: relative;
-    width: ;
 }
 
 .a{
     /* color: red; */
     font-size: 5em;
-    z-index: 2;
+    /* z-index: 30; */
     padding: 0px;
     margin: 0px;
     /* line-height: 100%; */
     
     position: absolute;
-    top: 51%;
+    top: 77%;
     justify-content: center;
     left: 42.5%;
 
@@ -62,4 +62,10 @@
     align-items: center;
     justify-content: center;
 } */
+
+.wave{
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
 
