@@ -10,10 +10,10 @@ class Handels extends Component {
         return(
             
             <div className="social">
-                <i class="fa fa-facebook-square s"></i>
-                <i class="fa fa-instagram s"></i>
-                <i class="fa fa-linkedin s"></i>
-                <i class="fa fa-twitter s"></i>
+                <div><i class="fa fa-facebook-square s"></i></div>
+                <div><i class="fa fa-instagram s"></i></div>
+                <div><i class="fa fa-linkedin s"></i></div>
+                <div><i class="fa fa-twitter s"></i></div>
             </div>
             
         )

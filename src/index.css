@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Noir';
+  src: local('Noir'), url(./Assets/Fonts/Noir_medium.otf) format('truetype');
+}

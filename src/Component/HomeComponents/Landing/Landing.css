@@ -9,7 +9,7 @@
 }
 
 .kreiva{
-    background: -webkit-linear-gradient(#ffffff, rgba(255, 255, 255, 0.55), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -22,6 +22,7 @@
     /* padding : 0; */
     /* margin : 0; */
     /* line-height : 80%; */
+    font-family: Noir;
 }
 
 .virtual{
@@ -31,7 +32,7 @@
 
   
     font-size: 2em;
-    padding: 3%;
+    padding: 1%;
 }
 
 .parent{
@@ -40,19 +41,19 @@
 }
 
 .a{
-    color: red;
+    /* color: red; */
     font-size: 5em;
-    z-index: 1;
+    z-index: 2;
     padding: 0px;
     margin: 0px;
     /* line-height: 100%; */
     
     position: absolute;
-    top: 65%;
+    top: 51%;
     justify-content: center;
-    left: 44%;
+    left: 42.5%;
 
-    /* background-image: linear-gradient(to bottom, #ffffff, rgba(139, 139, 139, 0.55), rgba(0, 0, 0, 0)); */
+    background-image: linear-gradient(to bottom, #ffffff, rgba(139, 139, 139, 0.55), rgba(0, 0, 0, 0));
 }
 
 /* .center{
