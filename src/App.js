@@ -1,29 +1,10 @@
-import React from 'react';
-import { Route, Switch, Redirect, withRouter } from "react-router-dom";
-import Event from './components/Event/Event';
-import Home from './components/Home/Home';
+import logo from './logo.svg';
+import Home from './Container/Home/Home.js';
 
-class App extends React.Component{
-
-  state = {
-
-  };
-  
-  render(){
-    return(
-      <Switch>
-        <Route path="/" exact
-          render={props => (
-            <Home />
-          )}
-        />
-        <Route path="/event" exact
-          render={props => (
-            <Event />
-          )}
-        />
-    </Switch>
-    );
-  };
+function App() {
+  return (
+    <Home/>
+  );
 }
+
 export default App;
