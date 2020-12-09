@@ -2,7 +2,6 @@ import React, {Component} from 'react'; 
 
 import 'font-awesome/css/font-awesome.min.css';
 
-
 import classes from './Handels.css';
 
 class Handels extends Component {

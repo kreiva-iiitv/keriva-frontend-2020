@@ -6,6 +6,7 @@
     /* padding-bottom: 5%; */
     padding-top: 2%;
     font-size: 2em;
+    z-index: 1000;
 }
 
 .s{
