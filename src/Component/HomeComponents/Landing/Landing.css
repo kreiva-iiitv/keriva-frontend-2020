@@ -9,19 +9,15 @@
 }
 
 .kreiva{
-    background: -webkit-linear-gradient(#ffffff, rgba(255, 255, 255, 0.55), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    font-size: 10em;
-    /* padding: 0px; */
-    /* margin: 0px; */
-    /* line-height: 100px; */
-    z-index: -1;
+    font-size: 9.5em;
+    z-index: 20;
 
-    /* padding : 0; */
-    /* margin : 0; */
-    /* line-height : 80%; */
+    font-family: Noir;
+    padding-top: 19%;
 }
 
 .virtual{
@@ -31,34 +27,32 @@
 
   
     font-size: 2em;
-    padding: 3%;
+    padding: 1%;
 }
 
 .parent{
     position: relative;
-    width: ;
 }
 
 .a{
-    color: red;
-    font-size: 5em;
-    z-index: 1;
+    font-size: 4.5em;
     padding: 0px;
     margin: 0px;
-    /* line-height: 100%; */
     
     position: absolute;
-    top: 65%;
+    top: 77%;
     justify-content: center;
-    left: 44%;
+    left: 43%;
 
-    /* background-image: linear-gradient(to bottom, #ffffff, rgba(139, 139, 139, 0.55), rgba(0, 0, 0, 0)); */
+    background-image: linear-gradient(to bottom, #ffffff, rgba(139, 139, 139, 0.55), rgba(0, 0, 0, 0));
 }
 
-/* .center{
-    text-align: center;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-} */
+
+.wave{
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    top: -2;
+    width: 100%;
+}
 

@@ -6,82 +6,82 @@
     padding: 1em;
     border-bottom: 7px solid #821169;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 1em;
     color: #fff;
   }
 
   .Kreiva-is-the-Annual-Cultural-Festival-of-IIIT-Vad {
     width: 38em;
-    height: 373px;
+    height: 10em;
     padding: 3em;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     color: #fff;
   }
 
   .K60{
-    width: 112px;
-    height: 46px;
+    width: 3em;
+    height: 1.2em;
     margin: 1.5em .1em .3em 1.2em;
     font-family: Noir-Noir;
-    font-size: 38px;
+    font-size: 2.5em;
     color: #ffffff;
   }
 
   .K60-2 {
-    width: 151px;
-    height: 17px;
+    width: 9em;
+    height: 1em;
     margin: -0.5em 0 0 1.3em;
     font-family: Noir-Noir;
-    font-size: 18px;
+    font-size:1.2em;
     color:#fff;
   }
   .circle-1{
-        width: 194px;
-        height: 194px;
+        width: 12em;
+        height: 12em;
         margin: 2.3em;
         border: solid 2px #821169;
         border-radius: 50%;
   }
 
   .circle-1-O {
-        width: 274px;
-        height: 274px;
+        width: 17em;
+        height: 17em;
         border: solid 2px rgba(255, 255, 255, 0.1);
         background-color: #1e022c;
         border-radius: 50%;
-        margin:-32em 20em 2em 42em;
+        margin:-20em 20em 2em 42em;
   }
 
   .p20 {
-    width: 88px;
-    height: 46px;
+    width: 2em;
+    height: 1em;
     font-family: Noir-Noir;
-    padding: 1.2em 1.4em 0;
-    font-size: 48px;
+    padding: 1em 1.4em 0;
+    font-size: 2.7em;
     color: #ffffff;
   }
 
   .p20-2 {
-    width: 175px;
-    height: 17px;
+    width: 10em;
+    height: 1em;
     margin: 1em 2em;
     font-family: Noir-Noir;
-    font-size: 18px;
+    font-size: 1em;
     color: #ffffff;
   }
 
   .circle-2{
-    width: 220px;
-    height: 220px;
+    width: 12em;
+    height: 12em;
     margin: 2.3em;
     border: solid 2px #821169;
     border-radius: 50%;
   }
 
   .circle-2-O{
-  width: 302px;
-  height: 302px;
+  width: 17em;
+  height: 17em;
   border: solid 2px rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   margin:-16em 2em 1.5em 60em;
@@ -89,34 +89,36 @@
   }
 
 
+
+
   .p14{
-    width: 125.6px;
-    height: 54.5px;
+    width: 3em;
+    height: 1em;
     margin:1.6em 2em 0em 1.5em;
     font-family: Noir-Noir;
-    font-size: 48px;
+    font-size: 2.3em;
     color: #ffffff;
   }
   .p14-2 {
-    width: 200px;
-    height: 20.1px;
+    width: 12em;
+    height: 1em;
     margin: 1em 0 0 2.8em;
     font-family: Noir-Noir;
-    font-size: 18px;
+    font-size:1em;
     color: #ffffff;
   }
   .circle-3-O{
-    width: 358px;
-    height: 358px;
+    width: 19em;
+    height: 19em;
     border: solid 2px rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     background-color: #1e022c;
-    margin:-5em 2em 2em 38em;
+    margin:-3em 2em 2em 44em;
   }
 
   .circle-3{
-    width: 282px;
-    height: 282px;
+    width: 14em;
+    height: 14em;
     margin: 2.3em;
     border-radius: 50%;
     border: solid 2px #821169;
