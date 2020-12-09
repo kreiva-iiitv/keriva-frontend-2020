@@ -2,9 +2,10 @@ import React from 'react';
 import './About.css';
 
 const about = (props) =>(
+    <div className="About_root">
+    <div className="ABOUT">ABOUT</div>
     <div className="About_main">
-    <div>
-        <div className="ABOUT">ABOUT</div>
+        
         <div className="Kreiva-is-the-Annual-Cultural-Festival-of-IIIT-Vad">
         Kreiva is the Annual Cultural Festival of IIIT Vadodara tentative test dates are as follows
         : 28th - 29th October .<br/>
@@ -13,12 +14,29 @@ const about = (props) =>(
         Come; Let's Celebrate this feeling of togetherness on public stage!!
         !! Welcome to Kreiva, IIIT Vadodara !!
         </div>
+        <div class="container">
+    <div class="big">
+        <div class="medium">
+        <p className="K60">60 K+</p><p className="K60-2">worth prize to win</p>
+        </div>
     </div>
-    <div>
-        <div className="circle-1-O"><div className="circle-1"><p className="K60">60 K+</p><p className="K60-2">worth prize to win</p></div></div>
-        <div className="circle-2-O"><div className="circle-2"><p className="p20">20 +</p><p className="p20-2">Events to participate</p></div></div>
-        <div className="circle-3-O"><div className="circle-3"><p className="p14">14 D+</p><p className="p14-2">Long fest to participate</p></div></div>
-        
+    </div>
+
+    <div class="container-2">
+    <div class="big-2">
+        <div class="medium-2">
+        <p className="p20">20 +</p><p className="p20-2">Events to participate</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-3">
+    <div class="big-3">
+        <div class="medium-3">
+        <p className="p14">14 D+</p><p className="p14-2">Long fest to participate</p>
+        </div>
+    </div>
+    </div>
     </div>
     </div>
 )

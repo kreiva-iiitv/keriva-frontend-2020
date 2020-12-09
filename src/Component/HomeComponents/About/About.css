@@ -1,8 +1,14 @@
-
-
-.ABOUT {
+.About_root{
+  margin: 15% 5%;
+}
+.About_main{
+  display: flex;
+  justify-content: space-between;
+  
+}
+  .ABOUT {
     width: 4.2em;
-    margin: 0em 2.2em;
+    
     padding: 1em;
     border-bottom: 7px solid #821169;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,115 +17,123 @@
   }
 
   .Kreiva-is-the-Annual-Cultural-Festival-of-IIIT-Vad {
-    width: 38em;
-    height: 10em;
+     width: 100%;
+    max-height: 1%;
     padding: 3em;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.2vw;
     color: #fff;
   }
 
-  .K60{
-    width: 3em;
-    height: 1.2em;
-    margin: 1.5em .1em .3em 1.2em;
-    font-family: Noir-Noir;
-    font-size: 2.5em;
-    color: #ffffff;
-  }
 
-  .K60-2 {
-    width: 9em;
-    height: 1em;
-    margin: -0.5em 0 0 1.3em;
-    font-family: Noir-Noir;
-    font-size:1.2em;
-    color:#fff;
+  .container {
+    width: 23%;
   }
-  .circle-1{
-        width: 12em;
-        height: 12em;
-        margin: 2.3em;
-        border: solid 2px #821169;
-        border-radius: 50%;
-  }
-
-  .circle-1-O {
-        width: 17em;
-        height: 17em;
-        border: solid 2px rgba(255, 255, 255, 0.1);
-        background-color: #1e022c;
-        border-radius: 50%;
-        margin:-20em 20em 2em 42em;
-  }
-
-  .p20 {
-    width: 2em;
-    height: 1em;
-    font-family: Noir-Noir;
-    padding: 1em 1.4em 0;
-    font-size: 2.7em;
-    color: #ffffff;
-  }
-
-  .p20-2 {
-    width: 10em;
-    height: 1em;
-    margin: 1em 2em;
-    font-family: Noir-Noir;
-    font-size: 1em;
-    color: #ffffff;
-  }
-
-  .circle-2{
-    width: 12em;
-    height: 12em;
-    margin: 2.3em;
-    border: solid 2px #821169;
-    border-radius: 50%;
-  }
-
-  .circle-2-O{
-  width: 17em;
-  height: 17em;
-  border: solid 2px rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  margin:-16em 2em 1.5em 60em;
-  background-color: #1e022c;
-  }
-
-
-
-
-  .p14{
-    width: 3em;
-    height: 1em;
-    margin:1.6em 2em 0em 1.5em;
-    font-family: Noir-Noir;
-    font-size: 2.3em;
-    color: #ffffff;
-  }
-  .p14-2 {
-    width: 12em;
-    height: 1em;
-    margin: 1em 0 0 2.8em;
-    font-family: Noir-Noir;
-    font-size:1em;
-    color: #ffffff;
-  }
-  .circle-3-O{
-    width: 19em;
-    height: 19em;
+  
+  .big {
+   margin: -40% 0;
     border: solid 2px rgba(255, 255, 255, 0.1);
+    width: 150%;
+    padding-bottom: 150%;
     border-radius: 50%;
-    background-color: #1e022c;
-    margin:-3em 2em 2em 44em;
   }
 
-  .circle-3{
-    width: 14em;
-    height: 14em;
-    margin: 2.3em;
-    border-radius: 50%;
+  .medium {
     border: solid 2px #821169;
+    float: left;
+    width: 78%;
+    margin-top: 11%;
+    margin-left: 11%;
+    padding-bottom: 25%;
+    border-radius: 50%;
+    z-index: 5;
   }
+
+
+  .big-2 {
+    margin-left: 75%;
+   margin-top: 1%;
+     border: solid 2px rgba(255, 255, 255, 0.1);
+     width: 150%;
+     padding-bottom: 150%;
+     border-radius: 50%;
+   }
+  .medium-2{
+    border: solid 2px #821169;
+    float: left;
+    width: 74%;
+    margin-top: 13%;
+    margin-left: 13%;
+    padding-bottom: 22%;
+    border-radius: 50%;
+    z-index: 5;
+  }
+
+
+  .container-2 {
+    width: 25%;
+  }
+
+  
+
+  .K60{
+    font-size: 2.5vw;
+    padding-top: 27%;
+    padding-left: 27%;
+    color: #fff
+  }
+  .p20{
+    font-size: 2.5vw;
+    padding-top: 30%;
+    padding-left: 35%;
+    color: #fff
+  }
+.p20-2,.K60-2{
+  font-size: 1.2vw;
+    padding-top: 2%;
+    padding-left: 9%;
+    color: #fff;
+}
+.p20-2{
+  font-size: 1.2vw;
+    padding-top: 2%;
+    padding-left: 8%;
+    color: #fff;
+}
+
+.container-3 {
+  width: 28%;
+}
+
+.big-3 {
+ margin: 120% 20% 0 -170%;
+  border: solid 2px rgba(255, 255, 255, 0.1);
+  width: 170%;
+  padding-bottom: 170%;
+  border-radius: 50%;
+}
+
+.medium-3 {
+  border: solid 2px #821169;
+  float: left;
+  width: 79%;
+  margin-top: 10%;
+  margin-left: 10%;
+  padding-bottom: 30%;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.p14{
+  font-size: 2.5vw;
+  padding-top: 30%;
+  padding-left: 30%;
+  color: #fff;
+}
+
+.p14-2{
+  font-size: 1.2vw;
+  padding-top: 5%;
+  padding-left: 16%;
+  color: #fff;
+}
