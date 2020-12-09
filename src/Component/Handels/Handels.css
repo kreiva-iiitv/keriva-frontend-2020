@@ -3,8 +3,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-left: 35%;
     padding-right: 35%;
-    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
+    padding-top: 2%;
     font-size: 2em;
+    z-index: 1000;
 }
 
 .s{
