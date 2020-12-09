@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Handels from '../Handels/Handels.js';
+import Handels from '../../Handels/Handels.js';
 
 import classes from './Landing.css';
 
