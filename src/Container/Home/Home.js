@@ -5,6 +5,7 @@ import Footer from '../../Component/Footer/Footer';
 import Header from '../../Component/Header/Header';
 import About from '../../Component/HomeComponents/About/About';
 import classes from './Home.css';
+import Gallery from '../Gallery/Gallery';
 
 class Home extends Component {
     render() {
@@ -13,7 +14,8 @@ class Home extends Component {
 		    <React.Fragment>
 		      <Header />
 		      	<Landing/>
-				 <About/> 	
+				 <About/>
+				 <Gallery/> 	
 		      <Footer />
 		    </React.Fragment>
             
