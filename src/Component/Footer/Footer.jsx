@@ -1,15 +1,15 @@
 import React from 'react';
 
 import "./footcss.css";
-import inslogo from "./img/logo.png";
-import dotlogo from "./img/dot.png";
-import cclogo from "./img/logo.png";
+import inslogo from "./inslogo.png";
+import dotlogo from "./dot.png";
+import cclogo from "./inslogo.png";
 
 const Footer = () => {
   return (
     <footer>
       <div className="inname">
-        <div className="logo">
+        <div>
             <img src = {inslogo} alt="iiitv-logo" className="inslog"></img>
         </div>
         <div className="name">

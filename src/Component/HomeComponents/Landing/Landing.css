@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.landing{
+    background-color: #1e022c;
+    text-align: center;
+}
+
+.kreiva{
+    background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 9.5em;
+    z-index: 20;
+
+    font-family: Noir;
+    padding-top: 19%;
+}
+
+.virtual{
+    background: linear-gradient(to bottom, #821169, rgba(130, 17, 105, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  
+    font-size: 2em;
+    padding: 1%;
+}
+
+.parent{
+    position: relative;
+}
+
+.a{
+    font-size: 4.5em;
+    padding: 0px;
+    margin: 0px;
+    
+    position: absolute;
+    top: 77%;
+    justify-content: center;
+    left: 43%;
+
+    background-image: linear-gradient(to bottom, #ffffff, rgba(139, 139, 139, 0.55), rgba(0, 0, 0, 0));
+}
+
+
+.wave{
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    top: -2;
+    width: 100%;
+}
+
