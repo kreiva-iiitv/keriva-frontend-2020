@@ -7,21 +7,21 @@
   
 }
   .ABOUT {
-    width: 4.2em;
-    
-    padding: 1em;
-    border-bottom: 7px solid #821169;
+    width: 3.7em;
+    margin-left: 6em;
+    padding: .3vw;
+    border-bottom: 3px solid #821169;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.3vw;
     color: #fff;
   }
 
   .Kreiva-is-the-Annual-Cultural-Festival-of-IIIT-Vad {
      width: 100%;
     max-height: 1%;
-    padding: 3em;
+    padding: 2em;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     color: #fff;
   }
 
