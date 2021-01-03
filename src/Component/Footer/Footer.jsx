@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="linkcon">
         <div className="linkna">
           LINKS
-          <hr className="lastline"></hr>
+          <hr className="underline"></hr>
         </div>
         <div className="links">
           <p className="link">Home</p>
@@ -31,7 +31,7 @@ const Footer = () => {
 
         <div className="conna">
           CONTACT
-          <hr className="lastline"></hr>
+          <hr className="underline"></hr>
         </div>
         <div className="contact">
           <p className="link">Email:</p>
@@ -39,7 +39,6 @@ const Footer = () => {
           <p className="link">Address:</p>
         </div>
       </div>
-
       <hr className="lastline"></hr>
 
       <div className="dev"> 
@@ -57,5 +56,3 @@ const Footer = () => {
 }
 
 export default Footer;
-
-

@@ -1,13 +1,14 @@
 footer {
   /* padding: 34px 334px 5px 83px; */
-  background-image: linear-gradient(to top, #350844, #3e3769);
+  background-image: linear-gradient(to right, #350844, #3e3769);
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .inname {
-  padding-top: 1vh;
+  padding-top: 5vh;
   flex-direction: row;
   display: flex;
   justify-content: center;
@@ -87,11 +88,18 @@ footer {
   color: #ffffff;
 }
 
-.lastline {
+.underline {
   background-color: #681883;
   border-color: #681883;
   height: 0.5vh;
   width: 100%;
+}
+
+.lastline {
+  background-color: #681883;
+  border-color: #681883;
+  height: 0.5vh;
+  width: 93%;
 }
 
 .dev {
@@ -114,4 +122,13 @@ footer {
   width: 20px;
   height: 20px;
   object-fit: contain;
+}
+
+.conna,
+.linkna {
+  height: 5vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
 }
