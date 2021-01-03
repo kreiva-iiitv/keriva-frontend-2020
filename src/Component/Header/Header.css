@@ -2,31 +2,25 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-left: 14%;
-    margin-right: 14%;
+    margin-left: 194px;
+    margin-right: 194px;
     background-color: #1e022c;
     color: white;
-    /* padding-top: 1%; */
 }
 
 .logo{
-    height: 7em;
-    padding-top: 6%;
+    height: 116px;
+    width: 194px;
+    padding-top: 10px;
 }
 
 
 .tab{
     vertical-align: middle;
     align-self: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 3.5%;
-    padding-right: 3.5%;
-    /* margin: 12%; */
-
-    /* margin-left: 15%;
-    margin-right: 15%; */
-
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     transition: all 0.3s ease;
 }
 
