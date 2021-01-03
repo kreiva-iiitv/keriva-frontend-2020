@@ -22,6 +22,11 @@
     padding-left: 25px;
     padding-right: 25px;
     transition: all 0.3s ease;
+    font-size: 17px;
+}
+
+.home{
+    border-bottom: 5px solid #821169;
 }
 
 .tab:hover{

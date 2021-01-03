@@ -9,15 +9,32 @@
 }
 
 .kreiva{
-    background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0));
+   background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.685), rgba(0, 0, 0, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    font-size: 9.5em;
-    z-index: 20;
+    font-size: 200px;
+    
 
     font-family: Noir;
     padding-top: 19%;
+    z-index: 300;
+}
+
+.a{
+    font-size: 100px;
+    padding: 0px;
+    margin: 0px;
+    
+    position: absolute;
+    top: 73%;
+    justify-content: center;
+    left: 43%;
+
+    background-image: linear-gradient(to bottom, #ffffff, rgba(139, 139, 139, 0.55), rgba(0, 0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .virtual{
@@ -34,24 +51,12 @@
     position: relative;
 }
 
-.a{
-    font-size: 4.5em;
-    padding: 0px;
-    margin: 0px;
-    
-    position: absolute;
-    top: 77%;
-    justify-content: center;
-    left: 43%;
 
-    background-image: linear-gradient(to bottom, #ffffff, rgba(139, 139, 139, 0.55), rgba(0, 0, 0, 0));
-}
 
 
 .wave{
     position: absolute;
     left: 0;
-    z-index: 0;
     top: -2;
     width: 100%;
 }
