@@ -14,11 +14,12 @@
     -webkit-text-fill-color: transparent;
 
     font-size: 200px;
-    
 
     font-family: Noir;
     padding-top: 19%;
     z-index: 300;
+
+    
 }
 
 .a{
@@ -29,7 +30,7 @@
     position: absolute;
     top: 73%;
     justify-content: center;
-    left: 43%;
+    left: 40%;
 
     background-image: linear-gradient(to bottom, #ffffff, rgba(139, 139, 139, 0.55), rgba(0, 0, 0, 0));
     -webkit-background-clip: text;

@@ -1,9 +1,9 @@
 .tabs{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
-    margin-left: 194px;
-    margin-right: 194px;
+    margin: auto;
+    width: 80%;
     background-color: #1e022c;
     color: white;
 }
