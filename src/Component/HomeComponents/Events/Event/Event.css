@@ -1,0 +1,104 @@
+.Event{
+  color: white;
+}
+
+.Event>div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.imgDiv{
+	height: 25vw;
+	width: 25vw; 
+	animation: enlarge 1s;
+}
+
+@keyframes enlarge{
+	0%{
+		height: 18.75vw;
+		width: 18.75vw; 
+	}
+	100%{
+		height: 25vw;
+		width: 25vw; 
+	}
+}
+
+
+.text{
+	text-align: center;
+	width: 25vw;
+	animation: enlargeText 1s;	
+	background-color: #2a1f6f
+}
+
+
+@keyframes enlargeText{
+	0%{
+		width: 18.75vw;
+		font-size: 1.3vw;
+	}
+	100%{
+		width: 25vw;
+		font-size: 1.5vw;
+	}
+}
+
+.title{
+	font-family: Manrope, serif;
+	font-weight: 500;
+	font-size: 1.5vw;
+	animation: title 1s;
+}
+
+@keyframes title{
+	0%{
+		font-size: 1.32vw;
+	}
+	100%{
+		font-size: 1.5vw;
+	}
+}
+
+.prize{
+	font-family: Manrope, serif;
+	font-weight: 300;
+	font-size: 1.15vw;
+	animation: prize 1s;
+}
+
+@keyframes prize{
+	0%{
+		font-size: 0.97vw;
+	}
+	100%{
+		font-size: 1.15vw;
+	}
+}
+
+//For smaller cards
+
+.imgDivSmall{
+	height: 18.75vw;
+	width: 18.75vw; 
+}
+
+.textSmall{
+	text-align: center;
+	width: 18.75vw;
+	font-size: 1.3vw;
+	background-color: #2a1f6f
+}
+
+.titleSmall{
+	font-size: 1.32vw;
+}
+
+.prizeSmall{
+	font-size: 0.97vw;
+}
+
