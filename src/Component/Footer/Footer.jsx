@@ -24,10 +24,10 @@ const Footer = () => {
           <hr className="underline"></hr>
         </div>
         <div className="links">
-          <p className="link">Home</p>
-          <p className="link">Events</p>
-          <p className="link">Members</p>
-          <p className="link">Institute Site</p>
+          <a href="" className="link">Home</a>
+          <a href="" className="link">Events</a>
+          <a href="" className="link">Members</a>
+          <a href="" className="link">Institute Site</a>
         </div>
         </div>
         <div className="footerlin">
