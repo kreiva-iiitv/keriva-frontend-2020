@@ -18,6 +18,7 @@ const Footer = () => {
       </div>
 
       <div className="linkcon">
+        <div className="footerlin">
         <div className="linkna">
           LINKS
           <hr className="underline"></hr>
@@ -28,7 +29,8 @@ const Footer = () => {
           <p className="link">Members</p>
           <p className="link">Institute Site</p>
         </div>
-
+        </div>
+        <div className="footerlin">
         <div className="conna">
           CONTACT
           <hr className="underline"></hr>
@@ -37,6 +39,7 @@ const Footer = () => {
           <p className="link">Email:</p>
           <p className="link">Phone:</p>
           <p className="link">Address:</p>
+        </div>
         </div>
       </div>
       <hr className="lastline"></hr>
