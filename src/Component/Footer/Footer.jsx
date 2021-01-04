@@ -36,9 +36,9 @@ const Footer = () => {
           <hr className="underline"></hr>
         </div>
         <div className="contact">
-          <p className="link">Email:</p>
-          <p className="link">Phone:</p>
-          <p className="link">Address:</p>
+          <p className="clink">Email:</p>
+          <p className="clink">Phone:</p>
+          <p className="clink">Address:</p>
         </div>
         </div>
       </div>

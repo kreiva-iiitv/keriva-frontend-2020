@@ -90,6 +90,7 @@ footer {
 }
 
 .link,
+.clink,
 .p-dev {
   padding: 10px;
   /* font-family: Roboto; */
@@ -156,4 +157,9 @@ footer {
 
 .link {
   text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  font-size: 0.9em;
 }
