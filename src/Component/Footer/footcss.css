@@ -5,7 +5,7 @@ footer {
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
   /* font-size: 24px; */
 }
 
@@ -28,7 +28,7 @@ footer {
   width: 584px;
   height: 23px;
   padding: 40px 0 54px 61px;
-  /* font-family: Noir-Noir; */
+  font-family: Arial;
   font-size: 24px;
   font-weight: normal;
   font-stretch: normal;
