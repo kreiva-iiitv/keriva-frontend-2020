@@ -8,8 +8,8 @@ function Gallery() {
     return (
         <div className="gallery">
             <CarouselProvider
-                naturalSlideWidth={20}
-                naturalSlideHeight={20}
+                naturalSlideWidth={500}
+                naturalSlideHeight={400}
                 totalSlides={5}
                 visibleSlides={2.5}
                 interval={2000}
@@ -18,38 +18,52 @@ function Gallery() {
                 <h1 className="GalleryHead">Gallery</h1>
                 <Slider>
                     <Slide index={0}>
-                        <img className="largeImg" src={gallery}/>
+                        <div className = "largeImg">
+                            <img  src={gallery}/>
+                        </div>
                     </Slide>
                     <Slide index={1}>
-                        <div className="midContainer center">
-                            <img src={gallery} className="midImg" />
+                        <div className="midContainer">
+                            <div className="upper">
+                                <img src={gallery} />
+                            </div>
                             <div className="subContainer">
-                                <div className="center">
-                                    <img src={gallery} className="smallImg" /> 
+                                <div className="lower1">
+                                    <img src={gallery}  /> 
                                 </div>
-                                <div className="center">
-                                    <img src={gallery} className="smallImg" />
+                                <div className="lower1">
+                                    <img src={gallery}  />
                                 </div>  
                                     
                             </div>        
                         </div>
                     </Slide>
-                    <Slide index={2}><img className="largeImg" src={gallery}/></Slide>
+                    <Slide index={2}>
+                        <div className="largeImg">
+                            <img  src={gallery}/>
+                        </div>
+                    </Slide>
                     <Slide index={3}>
-                        <div className="midContainer center">
-                            <img src={gallery} className="midImg" />
+                        <div className="midContainer">
+                            <div className="upper">
+                                <img src={gallery} />
+                            </div>
                             <div className="subContainer">
-                                <div className="center">
-                                    <img src={gallery} className="smallImg" /> 
+                                <div className="lower1">
+                                    <img src={gallery}  /> 
                                 </div>
-                                <div className="center">
-                                    <img src={gallery} className="smallImg" />
+                                <div className="lower1">
+                                    <img src={gallery}  />
                                 </div>  
                                     
                             </div>        
                         </div>
                     </Slide>
-                    <Slide index={2}><img className="largeImg" src={gallery}/></Slide>
+                    <Slide index={4}>
+                        <div className="largeImg">
+                            <img  src={gallery}/>
+                        </div>
+                    </Slide>
                 </Slider>
                 <ButtonBack className="prev">&#10094;</ButtonBack>
                 <ButtonNext className="next">&#10095;</ButtonNext>
