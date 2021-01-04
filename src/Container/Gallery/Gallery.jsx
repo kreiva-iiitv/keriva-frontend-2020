@@ -1,57 +1,61 @@
-import React, { Component } from 'react'
-import { createRef } from 'react'
-import gallery1 from '../../Assets/Images/gallery1.jpg'
-import gallery2 from '../../Assets/Images/gallery2.jpg'
-import gallery3 from '../../Assets/Images/gallery3.jpeg'
-import gallery4 from '../../Assets/Images/gallery4.jpg'
-import gallery5 from '../../Assets/Images/gallery5.jpg'
-import gallery6 from '../../Assets/Images/gallery6.jpg'
+import React from 'react'
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ImageWithZoom } from 'pure-react-carousel';
+import gallery from '../../Assets/Images/gallery4.jpg'
+import 'pure-react-carousel/dist/react-carousel.es.css';
 import './gallery.css'
-class Gallery extends Component {
 
-    constructor(props){
-        super(props)
-        this.myRef = React.createRef()
-    }
-
-    onScrollClick = (offset) => {
-        this.myRef.current.scrollLeft = this.myRef.current.scrollLeft + offset
-        console.log(this.myRef)
-    }
-
-    render() {
-        return (
-            <div  className="galleryContainer">
-                <div>
-                    <h1 className="GalleryHead">Gallery</h1>
-
-                </div>
-                <a href="#0" className="prev" onClick={()=>this.onScrollClick(-60)}>&#10094;</a>
-                <div ref={this.myRef} className="gallery">
-                    <div className="coloumn">
-                        <img alt="img" className="largeImg" src={gallery6}/>
-                    </div>
-                    <div className="coloumn">
-                        <img alt="img" className="midImg" src={gallery3}/>
-                        <img alt="img" className="smallImg" src={gallery4}/>
-                        <img alt="img" className="smallImg" src={gallery5}/>
-                    </div>
-                    <div className="coloumn">
-                        <img alt="img" className="largeImg" src={gallery6}/>
-                    </div>
-                    <div className="coloumn">
-                        <img alt="img" className="largeImg" src={gallery6}/>
-                    </div> 
-                    <div className="coloumn">
-                        <img alt="img" className="largeImg" src={gallery6}/>
-                    </div>                
-                </div>
-                
-                <a href="#0" className="next" onClick={()=>this.onScrollClick(60)}>&#10095;</a>
-            </div>
-            
-        )
-    }
+function Gallery() {
+    return (
+        <div className="gallery">
+            <CarouselProvider
+                naturalSlideWidth={20}
+                naturalSlideHeight={20}
+                totalSlides={5}
+                visibleSlides={2.5}
+                interval={2000}
+                isPlaying={true}
+                >
+                <h1 className="GalleryHead">Gallery</h1>
+                <Slider>
+                    <Slide index={0}>
+                        <img className="largeImg" src={gallery}/>
+                    </Slide>
+                    <Slide index={1}>
+                        <div className="midContainer center">
+                            <img src={gallery} className="midImg" />
+                            <div className="subContainer">
+                                <div className="center">
+                                    <img src={gallery} className="smallImg" /> 
+                                </div>
+                                <div className="center">
+                                    <img src={gallery} className="smallImg" />
+                                </div>  
+                                    
+                            </div>        
+                        </div>
+                    </Slide>
+                    <Slide index={2}><img className="largeImg" src={gallery}/></Slide>
+                    <Slide index={3}>
+                        <div className="midContainer center">
+                            <img src={gallery} className="midImg" />
+                            <div className="subContainer">
+                                <div className="center">
+                                    <img src={gallery} className="smallImg" /> 
+                                </div>
+                                <div className="center">
+                                    <img src={gallery} className="smallImg" />
+                                </div>  
+                                    
+                            </div>        
+                        </div>
+                    </Slide>
+                    <Slide index={2}><img className="largeImg" src={gallery}/></Slide>
+                </Slider>
+                <ButtonBack className="prev">&#10094;</ButtonBack>
+                <ButtonNext className="next">&#10095;</ButtonNext>
+            </CarouselProvider>
+        </div>
+    )
 }
 
 export default Gallery
