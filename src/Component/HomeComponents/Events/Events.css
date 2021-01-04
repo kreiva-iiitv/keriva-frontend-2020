@@ -1,0 +1,50 @@
+.EventsHead{
+    text-align: center;
+    width: 6em;
+    color: white;
+    font-family: Manrope, sans-serif;
+    font-weight: 600;
+    font-size: 1.375em;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin-left: 10vw;
+    padding: 0.4em 0.6em;
+    border-bottom: 0.19em solid #821169 ;
+}
+
+
+.CarouselParent{
+    padding:0 2vw;
+    padding-top: 4vw;
+}
+
+.CarouselChildren{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Slider{
+    width: 85vw;
+}
+
+.backButton{
+  border: solid #821169;
+  border-width: 0 0.5vw 0.5vw 0; 
+  /*display: inline-block;*/
+  padding: 0.5vw;
+  background-color: #1E022C;
+   transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.nextButton{
+  border: solid #821169;
+  border-width: 0 0.5vw 0.5vw 0; 
+  /*display: inline-block;*/
+  padding: 0.5vw;
+  background-color: #1E022C;
+   transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
