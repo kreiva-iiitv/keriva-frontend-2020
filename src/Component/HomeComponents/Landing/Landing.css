@@ -19,18 +19,26 @@
     padding-top: 19%;
     z-index: 300;
 
-    
+    display: flex;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
 }
 
 .a{
+    align-items: center;
+
     font-size: 100px;
     padding: 0px;
     margin: 0px;
     
     position: absolute;
-    top: 73%;
     justify-content: center;
-    left: 40%;
+    top: 73%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
 
     background-image: linear-gradient(to bottom, #ffffff, rgba(139, 139, 139, 0.55), rgba(0, 0, 0, 0));
     -webkit-background-clip: text;
@@ -51,9 +59,6 @@
 .parent{
     position: relative;
 }
-
-
-
 
 .wave{
     position: absolute;

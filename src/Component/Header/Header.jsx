@@ -5,15 +5,32 @@ import classes from './Header.css';
 
 const Header = () => {
   return (
-    <header className="tabs">
-      <a className="tab home">HOME</a>
-      <a className="tab ">EVENTS</a>
-      <div>
-        <img className="logo" src={logo} />
-        <p className="date">28th Dec 2020 - 10th Jan 2021</p>
+    <header >
+      <div className="tabs">
+
+        <div className="tab home">
+          <a >HOME</a>
         </div>
-      <a className="tab">MEMBERS</a>
-      <a className="tab">BROUCHURE</a>
+
+        <div className="tab ">
+          <a >EVENTS</a>
+        </div>
+     
+        <div>
+          <img  className="logo" src={logo} />
+          <p className="date">28th Dec 2020 - 10th Jan 2021</p>
+        </div>
+
+        <div className="tab">
+          <a >MEMBERS</a>
+        </div>
+     
+        <div className="tab">
+          <a>BROUCHURE</a>
+        </div>
+     
+      </div>
+     
     </header>
   );
 }
