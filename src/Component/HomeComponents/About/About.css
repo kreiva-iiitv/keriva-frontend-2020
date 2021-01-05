@@ -7,12 +7,12 @@
   
 }
   .ABOUT {
-    width: 3.7em;
-    margin-left: 6em;
-    padding: .3vw;
+    width: 4rem;
+    padding: 1rem 3rem .5rem 1.8rem;
     border-bottom: 3px solid #821169;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3vw;
+    border-radius: 2px;
+    font-family: Manrope,sans-serif;
+    font-size: 1.5rem;
     color: #fff;
   }
 
@@ -21,12 +21,12 @@
     max-height: 1%;
     padding: 2em;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.2rem;
     color: #fff;
   }
 
 
-  .container {
+  .container-1 {
     width: 23%;
   }
   
@@ -42,8 +42,8 @@
     border: solid 2px #821169;
     float: left;
     width: 78%;
-    margin-top: 11%;
-    margin-left: 11%;
+    margin-top: 10%;
+    margin-left: 10%;
     padding-bottom: 25%;
     border-radius: 50%;
     z-index: 5;
@@ -88,10 +88,10 @@
     padding-left: 35%;
     color: #fff
   }
-.p20-2,.K60-2{
+.K60-2{
   font-size: 1.2vw;
     padding-top: 2%;
-    padding-left: 9%;
+    padding-left: 11%;
     color: #fff;
 }
 .p20-2{
@@ -119,21 +119,28 @@
   width: 79%;
   margin-top: 10%;
   margin-left: 10%;
-  padding-bottom: 30%;
+  padding-bottom: 26%;
   border-radius: 50%;
   z-index: 5;
 }
 
 .p14{
-  font-size: 2.5vw;
+  font-size: 2.9vw;
   padding-top: 30%;
   padding-left: 30%;
   color: #fff;
 }
 
 .p14-2{
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   padding-top: 5%;
-  padding-left: 16%;
+  padding-left: 9%;
   color: #fff;
+}
+
+
+@media screen and (max-width: 800px) {
+  .Kreiva-is-the-Annual-Cultural-Festival-of-IIIT-Vad {
+    font-size: .9rem;
+  }
 }
