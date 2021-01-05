@@ -20,6 +20,7 @@ class Events extends React.Component{
 		}
 		else{
 			this.setState({currentSlide: 1});
+			
 		}
 	}
 
@@ -49,6 +50,8 @@ class Events extends React.Component{
 				    totalSlides={this.props.events.length}
 				    visibleSlides={3}
 				    infinite={true}
+				    dragEnabled={false}
+				    touchEnabled={false}
 				    className= "Events"
 				  >
 				  	<div className="CarouselChildren">

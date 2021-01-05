@@ -37,6 +37,7 @@
   background-color: #1E022C;
    transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+  outline: none;
 }
 
 .nextButton{
@@ -47,4 +48,5 @@
   background-color: #1E022C;
    transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  outline: none;
 }
