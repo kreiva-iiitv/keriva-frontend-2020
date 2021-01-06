@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect, withRouter } from "react-router-dom";
 import Event from './Container/Event/Event';
-import Gallery from './Container/Gallery/Gallery';
-import Home from './Container/Home/Home';
+import Home from './Container/Home';
 
 class App extends React.Component{
 
