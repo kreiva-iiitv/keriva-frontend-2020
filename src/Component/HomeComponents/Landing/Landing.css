@@ -8,16 +8,30 @@
     text-align: center;
 }
 
+.parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .kreiva{
-    background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0));
+   background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    font-size: 9.5em;
-    z-index: 20;
-
+    font-size: 12.5rem;
     font-family: Noir;
-    padding-top: 19%;
+    padding-top: 11%;
+    z-index: 1;
+}
+
+.a{
+    font-size: 6.8rem;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -7.85rem;
+    background-image: linear-gradient(to bottom, #ffffff, rgba(139, 139, 139, 0.55), rgba(0, 0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .virtual{
@@ -26,33 +40,15 @@
     -webkit-text-fill-color: transparent;
 
   
-    font-size: 2em;
+    font-size: 2.4rem;
     padding: 1%;
+    padding-top: 0%;
 }
-
-.parent{
-    position: relative;
-}
-
-.a{
-    font-size: 4.5em;
-    padding: 0px;
-    margin: 0px;
-    
-    position: absolute;
-    top: 77%;
-    justify-content: center;
-    left: 43%;
-
-    background-image: linear-gradient(to bottom, #ffffff, rgba(139, 139, 139, 0.55), rgba(0, 0, 0, 0));
-}
-
 
 .wave{
     position: absolute;
     left: 0;
-    z-index: 0;
-    top: -2;
+    top: 8rem;
     width: 100%;
 }
 

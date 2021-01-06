@@ -1,23 +1,32 @@
 .tabs{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
-    padding-left: 12%;
-    padding-right: 12%;
+    margin: auto;
+    width: 80%;
     background-color: #1e022c;
     color: white;
 }
 
 .logo{
-    height: 5em;
-    padding-top: 6%;
+    height: 116px;
+    width: 194px;
+    padding-top: 10px;
 }
+
 
 .tab{
     vertical-align: middle;
     align-self: center;
-    padding: 5%;
-    margin: 0;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: all 0.3s ease;
+    font-size: 17px;
+}
+
+.home{
+    border-bottom: 5px solid #821169;
 }
 
 .tab:hover{
