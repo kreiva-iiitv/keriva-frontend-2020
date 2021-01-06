@@ -1,0 +1,165 @@
+footer {
+  /* padding: 34px 334px 5px 83px; */
+  background-image: linear-gradient(to right, #350844, #3e3769);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  /* font-size: 24px; */
+}
+
+.inname {
+  padding-top: 2.5rem;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3vh;
+}
+
+.inslog {
+  width: 121px;
+  height: 117px;
+  object-fit: contain;
+}
+.name {
+  opacity: 0.85;
+  width: 584px;
+  height: 23px;
+  padding: 40px 0 54px 61px;
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.links {
+  flex-direction: column;
+  display: flex;
+}
+
+.linkcon {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  align-items: center;
+  padding-bottom: 2rem;
+  margin-right: 10rem;
+}
+.footerlin {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linkna {
+  width: 103px;
+  height: 21px;
+  margin: 22px 32px 17px 65px;
+  /* font-family: Roboto; */
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.conna {
+  width: 103px;
+  height: 21px;
+  /* margin: 22px 32px 17px 80px; */
+  /* font-family: Manrope; */
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.link,
+.clink,
+.p-dev {
+  padding: 10px;
+  /* font-family: Roboto; */
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.underline {
+  background-color: #681883;
+  /* border-color: #681883; */
+  border: none;
+  height: 0.5vh;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.lastline {
+  background-color: #681883;
+  /* border-color: #681883; */
+  border: none;
+  border-radius: 4px;
+  height: 0.65vh;
+  width: 93%;
+}
+
+.dev {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.dot,
+.cc {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dotlogo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.conna,
+.linkna {
+  padding-right: 2.5rem;
+  height: 5vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  padding-left: 2rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  font-size: 0.9em;
+}
