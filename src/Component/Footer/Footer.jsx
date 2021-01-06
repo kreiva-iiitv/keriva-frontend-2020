@@ -5,9 +5,9 @@ import "./footcss.css";
 import 'font-awesome/css/font-awesome.min.css';
 
 //import images
-import inslogo from "./inslogo.png";
-import dotlogo from "./dot.png";
-import cclogo from "./inslogo.png";
+import inslogo from "../../Assets/Images/inslogo.png";
+import dotlogo from "../../Assets/Images/dot.png";
+import cclogo from "../../Assets/Images/inslogo.png";
 
 
 const Footer = () => {
