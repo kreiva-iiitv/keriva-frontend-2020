@@ -18,14 +18,17 @@
    background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 12.5rem;
+
+    font-size: 200px;
+
     font-family: Noir;
     padding-top: 11%;
     z-index: 1;
 }
 
 .a{
-    font-size: 6.8rem;
+
+    font-size: 100px;
     padding: 0px;
     margin: 0px;
     margin-top: -7.85rem;
@@ -40,7 +43,10 @@
     -webkit-text-fill-color: transparent;
 
   
-    font-size: 2.4rem;
+
+    font-size: 35px;
+
+
     padding: 1%;
     padding-top: 0%;
 }
