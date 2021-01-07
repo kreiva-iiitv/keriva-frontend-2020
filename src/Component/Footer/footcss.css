@@ -1,12 +1,10 @@
 footer {
-  /* padding: 34px 334px 5px 83px; */
   background-image: linear-gradient(to right, #350844, #3e3769);
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
   font-family: Manrope, Arial, Helvetica, sans-serif;
-  /* font-size: 24px; */
 }
 
 .inname {
@@ -20,16 +18,12 @@ footer {
 }
 
 .inslog {
-  /* padding-left: 10px; */
   width: 121px;
   height: 117px;
   object-fit: contain;
 }
 .iiitv-name {
-  /* width: 584px; */
-  /* height: 117px; */
   padding-left: 61px;
-  /* padding: 40px 0 54px 61px; */
   font-family: Arial;
   font-size: 24px;
   font-weight: normal;
@@ -52,7 +46,6 @@ footer {
   width: 70%;
   align-items: center;
   padding-bottom: 2rem;
-  /* margin-right: 8rem; */
   padding-left: 100px;
 }
 .footerlin {
@@ -65,8 +58,6 @@ footer {
 .linkna {
   width: 103px;
   height: 21px;
-  /* margin: 22px 0px 17px 65px; */
-  /* font-family: Roboto; */
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -94,7 +85,6 @@ footer {
 .clink,
 .p-dev {
   padding: 10px;
-  /* font-family: Roboto; */
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -112,7 +102,6 @@ footer {
 
 .underline {
   background-color: #681883;
-  /* border-color: #681883; */
   border: none;
   height: 0.5vh;
   border-radius: 4px;
@@ -121,7 +110,6 @@ footer {
 
 .lastline {
   background-color: #681883;
-  /* border-color: #681883; */
   border: none;
   border-radius: 4px;
   height: 0.65vh;
@@ -131,7 +119,6 @@ footer {
 .dev {
   flex-direction: row;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -188,7 +175,6 @@ footer {
     width: 100%;
   }
   .inslog {
-    /* padding-left: 10px; */
     width: 60px;
     height: 61px;
     padding-left: 34px;
@@ -229,8 +215,6 @@ footer {
     margin: 0px;
     width: 100%;
     align-items: flex-start;
-    /* margin-left: 55px;
-    margin-right: 55px; */
     padding-bottom: 0px;
     padding-left: 55px;
   }
@@ -268,7 +252,6 @@ footer {
   }
   .link-toogle {
     padding-left: 20px;
-    /* align-items: flex-start; */
     display: block;
     color: #ffffff;
     cursor: pointer;
