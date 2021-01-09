@@ -221,3 +221,9 @@
     font-size: 8px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .About__root {
+    width: auto;
+  }
+}
