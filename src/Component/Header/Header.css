@@ -19,12 +19,17 @@
   padding: 20px 25px;
   transition: all 0.3s ease;
   font-size: 17px;
-  font-family: Manrope;
+  font-family: Manrope, "Segoe UI";
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+}
+
+.tabs__logo__tab a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .active {

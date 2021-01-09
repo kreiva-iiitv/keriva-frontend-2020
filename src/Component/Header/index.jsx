@@ -7,24 +7,24 @@ const Header = () => {
     <header>
       <div className="tabs">
         <div className="tabs__logo__tab active">
-          <a>HOME</a>
+          <a href="/">HOME</a>
         </div>
 
         <div className="tabs__logo__tab ">
-          <a>EVENTS</a>
+          <a href="/events">EVENTS</a>
         </div>
 
         <div>
-          <img className="tabs__logo" src={logo} />
+          <img className="tabs__logo" src={logo} alt="dates" />
           <p className="tabs__logo--date">28th Dec 2020 - 10th Jan 2021</p>
         </div>
 
         <div className="tabs__logo__tab">
-          <a>MEMBERS</a>
+          <a href="/members">MEMBERS</a>
         </div>
 
         <div className="tabs__logo__tab">
-          <a>BROUCHURE</a>
+          <a href="/brochure ">BROCHURE</a>
         </div>
       </div>
     </header>
