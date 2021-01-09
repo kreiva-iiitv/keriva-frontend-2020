@@ -1,40 +1,53 @@
-.tabs{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin: auto;
-    width: 80%;
-    background-color: #1e022c;
-    color: white;
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  background-color: #1e022c;
+  color: white;
 }
 
-.logo{
-    height: 116px;
-    width: 194px;
-    padding-top: 10px;
+.tabs__logo {
+  height: 116px;
+  width: 194px;
+  padding-top: 10px;
 }
 
-
-.tab{
-    vertical-align: middle;
-    align-self: center;
-    padding: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    transition: all 0.3s ease;
-    font-size: 17px;
+.tabs__logo__tab {
+  align-self: center;
+  padding: 20px 25px;
+  transition: all 0.3s ease;
+  font-size: 17px;
+  font-family: Manrope;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
-.home{
-    border-bottom: 5px solid #821169;
+.active {
+  border-bottom: 5px solid #821169;
 }
 
-.tab:hover{
-    border-bottom: 5px solid #821169;
-    cursor: pointer;
+.tabs__logo__tab:hover {
+  border-bottom: 5px solid #821169;
+  cursor: pointer;
 }
 
-.date{
-    font-size: 0.7em;
-    color: #821169;
+.tabs__logo--date {
+  font-size: 0.7em;
+  color: #821169;
+}
+
+@media screen and (max-width: 800px) {
+  .tabs__logo__tab {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tabs {
+    /* display: none; */
+  }
 }
