@@ -101,15 +101,17 @@ footer {
 }
 
 .underline {
-  background-color: #681883;
+  background-color: #821169;
   border: none;
-  height: 0.5vh;
   border-radius: 4px;
-  width: 100%;
+  width: 92.1px;
+  height: 5px;
+  object-fit: contain;
+  margin-left: 8px;
 }
 
 .lastline {
-  background-color: #681883;
+  background-color: #821169;
   border: none;
   border-radius: 4px;
   height: 0.65vh;
@@ -209,6 +211,7 @@ footer {
   }
 
   .linkcon {
+    max-width: 450px;
     padding-top: 0px;
     flex-direction: column;
     display: flex;
@@ -216,7 +219,7 @@ footer {
     width: 100%;
     align-items: flex-start;
     padding-bottom: 0px;
-    padding-left: 55px;
+    padding-left: 0px;
   }
 
   .footerlin {
@@ -255,5 +258,9 @@ footer {
     display: block;
     color: #ffffff;
     cursor: pointer;
+  }
+  .underline {
+    margin-left: 20px;
+    height: 2px;
   }
 }
