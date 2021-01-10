@@ -41,26 +41,15 @@
   color: #821169;
 }
 
-@media screen and (max-width: 800px) {
-  .tabs__logo__tab {
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .tabs {
-    display: none;
-    font-size: 2000px;
-  }
-}
-
 .mobile__tabs{
   height: 39px;
   width: 100%;
   position: fixed;
   top:0;
   left:0;
-  height: 68px;
+  height: 39px;
+  margin-top: 15px;
+  margin-bottom: 14px;
   background-color: #1e022c;
   display: flex;
   align-items: center;
@@ -90,6 +79,19 @@
 @media screen and (min-width: 600px) {
   .mobile__tabs {
     display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .tabs__logo__tab {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tabs {
+    display: none;
+    font-size: 2000px;
   }
 }
 
