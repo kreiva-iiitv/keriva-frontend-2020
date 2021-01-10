@@ -29,24 +29,21 @@
     
     height: 600px;
     position: relative;
+    overflow-x: hidden;
 }
 
 
 .largeImg{
     height: 539px;
     width: 100%;
-    object-fit: cover;
     display: flex;
     margin: 0;
 }
 
 .largeImg img{
     width: 100%;
+    object-fit: cover;
 }
-
-
-
-
 
 .GalleryHead{
     width: 110px;
@@ -104,3 +101,46 @@
     width: 100%;
     margin-top: 0.2rem;
 }
+@media screen and (max-width: 400px) 
+    {
+        .gallery{
+            width:400px;
+            height:500px;
+        }
+        .largeImg{
+            width: 142px;
+            height:142px;
+            margin:0 15px;
+        }
+        .largeImg img{
+            height:100%;
+
+            object-fit: fill;
+        }
+        .midContainer{
+            width: 142px;
+            height:142px;
+            margin:0 0 0 15px;
+        }
+        .upper{
+            height: 42%;
+            object-fit: fill;
+        }
+        .lower1{
+            width: 48%;
+        }
+        .subContainer{
+            height: 70%;
+            margin:0;
+        }
+        .prev  {
+            top: 156px;
+            left:-60px;
+
+        }
+        .next{
+            top: 156px;
+            right:-70px;
+        }
+
+    }
