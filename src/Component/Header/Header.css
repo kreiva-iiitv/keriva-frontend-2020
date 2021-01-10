@@ -83,7 +83,13 @@
 
 .hamburger{
   color: #821169;
-  height: 30px;
-  width: 40px;
+  font-size: 20px;
+  padding-right: 15.5px;
+}
+
+@media screen and (min-width: 600px) {
+  .mobile__tabs {
+    display: none;
+  }
 }
 
