@@ -1,0 +1,70 @@
+.SideDrawer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 101;
+    background-color: #471259;
+    transition: transform 0.3s ease-out;
+}
+
+
+@media screen and (min-width: 800px) {
+    .SideDrawer {
+      display: none;
+    }
+}
+
+.Open{
+    transform: translateX(0);
+}
+
+.Close{
+    transform: translateX(-110%);
+}
+
+.side__hamburger{
+    position: fixed;
+    top:0;
+    right:0;
+    padding: 5px 10px;
+    margin: 19px;
+    color: white;
+    background-color: #821169;
+}
+
+.side__tabs{
+
+}
+
+.side__tab{
+    color: white;
+    font-family: Manrope-SemiBold;
+    font-weight: bold;
+    height: 24px;
+    width: 100%;
+    padding-left: 32px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+
+   margin-top: 12px;
+   margin-bottom: 12px;
+
+   border-left: 10px solid  #471259;
+}
+
+.side__active{
+    background-image: linear-gradient(to right, #550962 , #d03893);
+    border-left: 10px solid #821169;
+}
+
+.side__handles{
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    margin-left: 61px;
+    margin-right: 61px;
+    color: white;
+    margin-top: 400px;
+}

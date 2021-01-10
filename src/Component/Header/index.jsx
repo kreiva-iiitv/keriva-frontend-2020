@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "../../Assets/Images/logo.png";
+import "font-awesome/css/font-awesome.min.css";
 import './Header.css';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
       <div className="tabs">
@@ -26,6 +27,15 @@ const Header = () => {
         <div className="tabs__logo__tab">
           <a>BROUCHURE</a>
         </div>
+      </div>
+
+
+      <div className="mobile__tabs">
+
+          <div><i class="fa fa-bars blank"></i></div>
+          <img className="mobile__tabs__logo" src={logo} />
+          <div><i class="fa fa-bars hamburger" onClick={props.opened}></i></div>
+
       </div>
     </header>
   );

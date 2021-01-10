@@ -46,8 +46,44 @@
     padding: 10px;
   }
 }
+
 @media screen and (max-width: 600px) {
-  .tab {
+  .tabs {
     display: none;
+    font-size: 2000px;
   }
 }
+
+.mobile__tabs{
+  height: 39px;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  height: 68px;
+  background-color: #1e022c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+ 
+
+}
+
+.mobile__tabs__logo{
+  height: 39px;
+  width: 66px;
+}
+
+.blank{
+  color: #1e022c;
+  height: 30px;
+  width: 40px;
+}
+
+.hamburger{
+  color: #821169;
+  height: 30px;
+  width: 40px;
+}
+
