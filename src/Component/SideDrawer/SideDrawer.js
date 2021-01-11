@@ -14,7 +14,7 @@ const SideDrawer = (props) => {
             
                 <div className="side__tabs">
                     <div className="side__tab side__active">HOME</div>
-                    <div className="side__tab">EVENSTS</div>
+                    <div className="side__tab">EVENTS</div>
                     <div className="side__tab">MEMBERS</div>
                     <div className="side__tab">BROCHURE</div>
                 </div>

@@ -48,8 +48,8 @@
   top:0;
   left:0;
   height: 39px;
-  margin-top: 15px;
-  margin-bottom: 14px;
+  padding-top: 15px;
+  padding-bottom: 14px;
   background-color: #1e022c;
   display: flex;
   align-items: center;
