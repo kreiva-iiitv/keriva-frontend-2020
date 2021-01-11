@@ -73,13 +73,13 @@
 .upper{
     height: 50%;
     width: 100%;
-    object-fit: cover;
     display: flex;
     margin-bottom: 10px;
 }
 
 .upper img{
     width: 100%;
+    object-fit: cover;
 }
 
 .lower1{
@@ -115,7 +115,7 @@
         .largeImg img{
             height:100%;
 
-            object-fit: fill;
+            object-fit: cover;
         }
         .midContainer{
             width: 142px;
@@ -124,7 +124,7 @@
         }
         .upper{
             height: 42%;
-            object-fit: fill;
+            object-fit: cover;
         }
         .lower1{
             width: 48%;
