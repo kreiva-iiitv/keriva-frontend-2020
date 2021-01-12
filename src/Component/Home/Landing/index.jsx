@@ -8,20 +8,21 @@ import "./Landing.css";
 class Landing extends Component {
   render() {
     return (
-      <div className="landing">
-        <img className="wave" src={wave} />
-
-        <div className="parent">
-          <p className="kreiva">KREIVA</p>
-          <p className="kreiva a">2020</p>
+      <>
+        <div className="landing">
+          <img src={wave} width="100%" height="100%" />
+          <div className={"landing__text"}>
+            <div className="landing__text--font landing__text--section">
+              KREIVA
+            </div>
+            <div className="landing__text--font landing__text--sub-section">
+              2020
+            </div>
+            <div></div>
+          </div>
         </div>
-
-        <div className="virtual">
-          <p>A Virtual Fest</p>
-        </div>
-
         <Handle />
-      </div>
+      </>
     );
   }
 }
