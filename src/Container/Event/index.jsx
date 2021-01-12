@@ -6,7 +6,7 @@ import Timeline from '../../Component/Events/Timeline/Timeline'
 const About = () => {
   return (
     <React.Fragment>
-      <Header />
+      {/*<Header /> */}
         <Timeline/>
         <CardContainer/>
       <Footer />
