@@ -7,16 +7,16 @@ class Handle extends Component {
     return (
       <div className="social">
         <div>
-          <i class="fa fa-facebook-square s"></i>
+          <i className="fa fa-facebook-square s"></i>
         </div>
         <div>
-          <i class="fa fa-instagram s"></i>
+          <i className="fa fa-instagram s"></i>
         </div>
         <div>
-          <i class="fa fa-linkedin s"></i>
+          <i className="fa fa-linkedin s"></i>
         </div>
         <div>
-          <i class="fa fa-twitter s"></i>
+          <i className="fa fa-twitter s"></i>
         </div>
       </div>
     );
