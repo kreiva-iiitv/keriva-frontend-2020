@@ -72,6 +72,7 @@
 
 
 .card__start__time-hr--hidden,.card__end__time-hr--hidden{
+  margin:0;
   width: 5.902vw;
   height: 0.34vw;
   border:none;
@@ -81,6 +82,7 @@
 
 
 .card__start__time-hr--visible,.card__end__time-hr--visible {
+  margin:0;
   width: 5.902vw;
   height: 0.34vw;
   border:none;
@@ -89,6 +91,7 @@
 }
 
 .card__start__date-hr--hidden, .card__end__date-hr--hidden{
+  margin:0;
   width: 3.472vw;
   height: 0.34vw;
   border:none;
@@ -97,6 +100,7 @@
 }
 
 .card__start__date-hr--visible, .card__end__date-hr--visible {
+  margin:0;
   width: 3.472vw;
   height: 0.34vw;
   border:none;
@@ -227,6 +231,7 @@
 }
 
 .card__start__date-hr--mobile--hidden, .card__end__date-hr--mobile--hidden{
+  margin:0;
   width: 9.44vw;
   height: 0.55vw;
   border:none;
@@ -235,6 +240,7 @@
 }
 
 .card__start__date-hr--mobile--visible, .card__end__date-hr--mobile--visible {
+  margin:0;
   width: 9.44vw;
   height: 0.55vw;
   border:none;
@@ -243,6 +249,7 @@
 }
 
 .card__start__time-hr--mobile--hidden,.card__end__time-hr--mobile--hidden{
+  margin:0;
   width: 5.55vw;
   height: 0.55vw;
   border:none;
@@ -252,6 +259,7 @@
 
 
 .card__start__time-hr--mobile--visible,.card__end__time-hr--mobile--visible {
+  margin:0;
   width: 5.55vw;
   height: 0.55vw;
   border:none;
@@ -343,6 +351,7 @@
 }
 
 .card__details__hr--mobile{
+	margin:0;
 	height: 0.55vw;
 	width: 3.055vw;
   	border:none;

@@ -5,7 +5,6 @@
 }
 
 
-
 .timeline__content{
 	display: flex;
 	flex-direction: column;
@@ -67,6 +66,7 @@
 }
 
 .timeline__hr{
+	margin: 0;
 	height: 4.26vw;
 	width: 0.347vw;
   	border:none;
