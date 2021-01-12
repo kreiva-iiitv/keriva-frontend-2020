@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import "./Footer.css";
 
@@ -52,10 +52,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="links" id="cyka">
-            <a href="" className="link">Home</a>
-            <a href="" className="link">Events</a>
-            <a href="" className="link">Members</a>
-            <a href="" className="link">Institute Site</a>
+            <NavLink className="link" to="/">Home</NavLink>
+            <NavLink className="link" to="/events">Events</NavLink>
+            <NavLink className="link" to="/members">Members</NavLink>
+            <NavLink className="link" to="/">Institue Site</NavLink>
           </div>
         </div>
 
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      
+
       <hr className="lastline"></hr>
       <div className="dev">
         <div className="dot">

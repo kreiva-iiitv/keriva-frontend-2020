@@ -1,5 +1,5 @@
 .landing {
-  margin-top: 68px;
+  margin-top: -30px;
   width: 100%;
   position: relative;
 }
@@ -44,8 +44,6 @@
   transform: translateY(-75%);
 }
 @media screen and (max-width: 1280px) {
-  .landing__text {
-  }
   .landing__text--section {
     font-size: 150px;
   }
@@ -56,6 +54,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .landing {
+    margin-top: 68px;
+  }
   .landing__text--section {
     font-size: 77px;
   }

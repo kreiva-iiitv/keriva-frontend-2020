@@ -1,14 +1,14 @@
 import React from "react";
 import Landing from "../../Component/Home/Landing";
 import Footer from "../../Component/Footer";
-// import Header from "../../Component/Header";
+import Navigation from "../../Component/Navigation";
 import About from "../../Component/Home/About";
 import Gallery from "../Gallery";
 
 const Home = () => {
   return (
     <React.Fragment>
-      {/*<Header /> */}
+      <Navigation />
       <Landing />
       <About />
       <Gallery />

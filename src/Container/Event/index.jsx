@@ -1,14 +1,15 @@
 import React from "react";
 import CardContainer from "../../Component/Events/EventSection/CardContainer";
 import Footer from "../../Component/Footer";
-import Header from "../../Component/Header";
+import Navigation from "../../Component/Navigation";
 import Timeline from '../../Component/Events/Timeline/Timeline'
+
 const About = () => {
   return (
     <React.Fragment>
-      {/*<Header /> */}
-        <Timeline/>
-        <CardContainer/>
+      <Navigation />
+      <Timeline />
+      <CardContainer />
       <Footer />
     </React.Fragment>
   );
