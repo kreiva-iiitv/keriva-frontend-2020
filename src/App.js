@@ -21,7 +21,7 @@ class App extends React.Component{
           <Route path="/event" exact
             render={props => (
               <Event />
-            )}
+            )}  
           />
       </Switch>
     </BrowserRouter>
