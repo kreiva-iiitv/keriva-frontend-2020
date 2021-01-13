@@ -1,0 +1,428 @@
+.card{
+	display: flex;
+	flex-direction: row; 
+}
+
+
+.card__start{
+	display: flex;
+	flex-direction: row;
+	font-family: Manrope, sans-serif;
+	font-weight: normal;
+	font-size: 0.9vw;
+	/*font-size: 13px;*/
+	padding-top: 2.43vw;
+}
+
+
+
+.card__start__date--bordered,.card__start__time--bordered{
+	height: 1.875vw;
+	width: 5.834vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6.94vw;
+	background-color: #1e022c;
+	border: solid 0.208vw #821169;
+}
+
+.card__start__date--unbordered,.card__start__time--unbordered{
+	height: 1.875vw;
+	width: 5.834vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	border-radius: 6.94vw;
+	background-color: #1e022c;
+	border: solid 0.208vw transparent;
+}
+
+.card__end{
+	display: flex;
+	flex-direction: row;
+	font-family: Manrope, sans-serif;
+	font-weight: normal;
+	font-size: 0.9vw;
+	/*font-size: 13px;*/
+	padding-top: 2.43vw;
+}
+
+.card__end__time--bordered,.card__end__date--bordered{
+	height: 1.875vw;
+	width: 5.834vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6.94vw;
+	background-color: #1e022c;
+	border: solid 0.208vw #821169;
+}
+
+.card__end__time--unbordered,.card__end__date--unbordered{
+	height: 1.875vw;
+	width: 5.834vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6.94vw;
+	background-color: #1e022c;
+	border: solid 0.208vw transparent;
+}
+
+
+.card__start__time-hr--hidden,.card__end__time-hr--hidden{
+  margin:0;
+  width: 5.902vw;
+  height: 0.34vw;
+  border:none;
+  background-color: transparent;
+  margin-top: 1vw;
+}
+
+
+.card__start__time-hr--visible,.card__end__time-hr--visible {
+  margin:0;
+  width: 5.902vw;
+  height: 0.34vw;
+  border:none;
+  background-color: #821169;
+  margin-top: 1vw;
+}
+
+.card__start__date-hr--hidden, .card__end__date-hr--hidden{
+  margin:0;
+  width: 3.472vw;
+  height: 0.34vw;
+  border:none;
+  background-color: transparent;
+  margin-top: 1vw;
+}
+
+.card__start__date-hr--visible, .card__end__date-hr--visible {
+  margin:0;
+  width: 3.472vw;
+  height: 0.34vw;
+  border:none;
+  background-color: #821169;
+  margin-top: 1vw;
+}
+
+.card__details__border--bordered{
+	padding: 0.97vw 1.04vw; 
+	border-radius: 1.736vw;
+	border: solid 0.208vw #821169;
+	background-color: #1e022c;
+	z-index: 2;
+	/*animation: border 1.5s;*/
+}
+
+@keyframes border{
+	0%{
+		border-radius: 1.736vw;
+		border: solid 0.208vw transparent;
+		border: none;
+		padding: 0 1.04vw;
+	}
+	100%{
+		padding: 0.97vw 1.04vw; 
+		border-radius: 1.736vw;
+		border: solid 0.208vw #821169;
+		background-color: #1e022c;		
+	}
+}
+
+.card__details__border--unbordered{
+	border-radius: 1.736vw;
+	border: solid 0.208vw transparent;
+	padding: 0.97vw 1.04vw;
+	/*animation: unborder 1.5s;*/
+}
+
+@keyframes unborder{
+	0%{
+		border: solid 0.208vw #821169;
+		background-color: #1e022c;	
+		z-index: 2;
+	}
+	100%{
+		border-radius: 1.736vw;
+		border: solid 0.208vw transparent;
+		background-color: transparent;
+		z-index: 1;
+	}
+}
+
+.card__details--unhighlighted{
+	display: flex;
+	flex-direction: column;
+	gap: 0.55vw;
+	padding: 1.25vw 1.94vw;	
+	background: linear-gradient(to right, #471259 0%,#2a1f6f 100%);
+	cursor: pointer;
+}
+
+.card__details--highlighted{
+	display: flex;
+	flex-direction: column;
+	gap: 0.55vw;
+	padding: 1.25vw 1.94vw;	
+	background: linear-gradient(to right, #550962 0%,#d03893 100%);
+	cursor: pointer;
+}
+.card__details__title{
+	font-family: Manrope, sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+}
+
+
+.card__details__description{
+	width: 35.55vw;
+	font-family: Manrope, sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+
+.card__details__prize{
+	display: flex;
+	flex-direction: row;
+	gap:3.54vw;
+	margin-top: 1.11vw;
+	font-family: Manrope, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.card__details__prize__worth{
+	font-weight: normal;
+}
+
+@media (min-width: 600px) and (max-width: 800px){
+
+.card__details__title{
+	font-size: 13.33px;
+}
+
+.card__details__description{
+	font-size: 8.88px;
+}
+
+.card__details__prize{
+	font-size: 10px;
+}
+
+}
+
+@media(max-width: 600px){
+	.card{
+		display: none;
+	}
+}
+
+
+
+/*Mobile view*/
+
+.card--mobile{
+	display: flex;
+	flex-direction: column;
+}
+
+.card__start__date-hr--mobile--hidden, .card__end__date-hr--mobile--hidden{
+  margin:0;
+  width: 9.44vw;
+  height: 0.55vw;
+  border:none;
+  background-color: transparent;
+  margin-top: 3.61vw;
+}
+
+.card__start__date-hr--mobile--visible, .card__end__date-hr--mobile--visible {
+  margin:0;
+  width: 9.44vw;
+  height: 0.55vw;
+  border:none;
+  background-color: #821169;
+  margin-top: 3.61vw;
+}
+
+.card__start__time-hr--mobile--hidden,.card__end__time-hr--mobile--hidden{
+  margin:0;
+  width: 5.55vw;
+  height: 0.55vw;
+  border:none;
+  background-color: transparent;
+  margin-top: 3.61vw;
+}
+
+
+.card__start__time-hr--mobile--visible,.card__end__time-hr--mobile--visible {
+  margin:0;
+  width: 5.55vw;
+  height: 0.55vw;
+  border:none;
+  background-color: #821169;
+  margin-top: 3.61vw;
+}
+
+
+.card__start--mobile{
+	display: flex;
+	flex-direction: row;
+	font-family: Manrope, sans-serif;
+	font-weight: normal;
+	font-size: 3.33vw;
+	/*font-size: 12px;*/
+	padding-bottom: 3.33vw;
+}
+
+
+
+.card__start__date--mobile--bordered,.card__start__time--mobile--bordered{
+	height: 6.94vw;
+	width: 19.72vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6.94vw;
+	background-color: #1e022c;
+	border: solid 0.277vw #821169;
+}
+
+.card__start__date--mobile--unbordered,.card__start__time--mobile--unbordered{
+	height: 6.94vw;
+	width: 19.72vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	border-radius: 6.94vw;
+	background-color: #1e022c;
+	border: solid 0.277vw transparent;
+}
+
+
+
+.card__end--mobile{
+	display: flex;
+	flex-direction: row;
+	font-family: Manrope, sans-serif;
+	font-weight: normal;
+	font-size: 3.33vw;
+	/*font-size: 12px;*/
+	padding-top: 3.33vw;
+}
+
+.card__end__time--mobile--bordered,.card__end__date--mobile--bordered{
+	height: 6.94vw;
+	width: 19.72vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6.94vw;
+	background-color: #1e022c;
+	border: solid 0.277vw #821169;
+}
+
+.card__end__time--mobile--unbordered,.card__end__date--mobile--unbordered{
+	height: 6.94vw;
+	width: 19.72vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6.94vw;
+	background-color: #1e022c;
+	border: solid 0.277vw transparent;
+}
+
+.card__start__title--mobile,.card__end__title--mobile{
+	font-weight: bold;
+	font-size: 3.88vw;
+	height: 7.5vw;
+	display: flex;
+	align-items: center;
+	margin-left: 8.33vw;
+}
+
+.card__details__wrapper--mobile{
+	display: flex;
+	flex-direction: row;
+}
+
+.card__details__hr--mobile{
+	margin:0;
+	height: 0.55vw;
+	width: 3.055vw;
+  	border:none;
+  	background-color: #821169;
+  	margin-top: 8.33vw;
+	transform: scaleX(1.99) translateX(0.72vw);
+}
+
+.card__details__border--mobile--bordered{
+	padding: 2.22vw 2.77vw; 
+	border-radius: 1.736vw;
+	border: solid 0.277vw #821169;
+	background-color: #1e022c;
+	z-index: 2;
+}
+
+.card__details__border--mobile--unbordered{
+	border-radius: 1.736vw;
+    border: solid 0.277vw transparent;
+    padding: 2.22vw 2.77vw;
+}
+
+
+.card__details--mobile--unhighlighted{
+	display: flex;
+	flex-direction: column;
+	gap: 2.22vw;
+	padding: 3.61vw 4.44vw;	
+	background: linear-gradient(to right, #471259 0%,#2a1f6f 100%);
+	cursor: pointer;
+}
+
+.card__details--mobile--highlighted{
+	display: flex;
+	flex-direction: column;
+	gap: 2.22vw;
+	padding: 3.61vw 4.44vw;	
+	background: linear-gradient(to right, #550962 0%,#d03893 100%);
+	cursor: pointer;
+}
+.card__details__title--mobile{
+	font-family: Manrope, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+
+.card__details__description--mobile{
+	width: 70.277vw;
+	font-family: Manrope, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+
+.card__details__prize--mobile{
+	display: flex;
+	flex-direction: row;
+	gap:3.54vw;
+	margin-top: 1.11vw;
+	font-family: Manrope, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.card__details__prize__worth--mobile{
+	font-weight: normal;
+}
+
+@media(min-width: 600px){
+	.card--mobile{
+		display: none;
+	}
+}
