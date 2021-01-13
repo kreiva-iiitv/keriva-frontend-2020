@@ -13,7 +13,7 @@ import cclogo from "../../Assets/Images/inslogo.png";
 const Footer = () => {
  
   const link_toogle = (e) => {
-    var x = e.target.style.transform == 'rotate(180deg)'? e.target.style.transform = 'rotate(0deg)': e.target.style.transform = 'rotate(180deg)';
+    e.target.style.transform == 'rotate(180deg)'? e.target.style.transform = 'rotate(0deg)': e.target.style.transform = 'rotate(180deg)';
     
     var element = document.getElementById("cyka");
 

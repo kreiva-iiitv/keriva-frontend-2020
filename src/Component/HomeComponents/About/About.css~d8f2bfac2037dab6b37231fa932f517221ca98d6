@@ -7,7 +7,7 @@
   
 }
   .ABOUT {
-    /* width: 3.7em; */
+    width: 3.7em;
     margin-left: 6em;
     padding: .3vw;
     border-bottom: 3px solid #821169;
