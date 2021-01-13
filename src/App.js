@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect, withRouter } from "react-router-dom";
 import Event from './Container/Event/Event';
 import Home from './Container/Home';
+import Members from './Container/Members/Members'
 
 class App extends React.Component{
 
@@ -22,6 +23,11 @@ class App extends React.Component{
             render={props => (
               <Event />
             )}  
+          />
+          <Route path="/members"
+            render={props =>(
+              <Members/>
+              )}
           />
       </Switch>
     </BrowserRouter>

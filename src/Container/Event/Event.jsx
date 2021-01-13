@@ -8,7 +8,7 @@ const About = () => {
       <Header />
 
       <Timeline/>
-      
+       
       <Footer />
     </React.Fragment>
   );

@@ -1,0 +1,45 @@
+.member{
+	height: 31.94vw;
+	color: white;
+}
+
+.member__card__border{
+	width: 24.375vw;
+	height: 28.611vw;
+	background: transparent;
+	border: solid 0.069vw #821169;
+	border-radius: 1.041vw;
+}
+
+.member__card{
+	width: 22.22vw;
+	height: 31.04vw;
+	display: flex;
+	flex-direction: column;
+}	
+
+.member__card__image{
+	height: 22.22vw;
+	width: 22.22vw;
+	padding: 0 1.04vw;
+	padding-top: 0.9027vw;
+}
+
+.member__card__image__img{
+	height: inherit;
+	width: inherit;
+	object-fit: cover;
+}
+
+
+.member__card__details{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 1.11vw;
+}
+
+.member__card__details__text{
+	/*display: flex;*/
+	/*flex-direction: row;*/
+}
