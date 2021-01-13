@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Event from './Container/Event';
+import TimelineIndex from './Container/Event/TimelineIndex';
+import Event from './Container/Event/EventIndex';
 import Home from './Container/Home';
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/events" component={Event} />
+        <Route exact path="/timeline" component={TimelineIndex} />
         <Route exact path="/members" component={Home} />
         <Route exact path="#" component={Home} />
       </Switch>
