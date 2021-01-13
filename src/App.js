@@ -1,37 +1,20 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect, withRouter } from "react-router-dom";
-import Event from './Container/Event/Event';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Event from './Container/Event';
 import Home from './Container/Home';
 import Members from './Container/Members/Members'
 
-class App extends React.Component{
-
-  state = {
-
-  };
-  
-  render(){
-    return(
-      <BrowserRouter>
-        <Switch>
-          <Route path="/" exact
-            render={props => (
-              <Home />
-            )}
-          />
-          <Route path="/event" exact
-            render={props => (
-              <Event />
-            )}  
-          />
-          <Route path="/members"
-            render={props =>(
-              <Members/>
-              )}
-          />
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/events" component={Event} />
+        <Route exact path="/members" component={Home} />
+        <Route exact path="#" component={Home} />
       </Switch>
     </BrowserRouter>
-    );
-  };
+  );
 }
+
 export default App;

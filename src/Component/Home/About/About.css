@@ -11,7 +11,7 @@
 }
 
 .About__text--heading {
-  font-family: Manrope;
+  font-family: Manrope, "Segoe UI";
   font-size: 22px;
   font-weight: 600;
   padding: 10px 20px;
@@ -21,7 +21,7 @@
 }
 
 .About__text--content {
-  font-family: Manrope;
+  font-family: Manrope, "Segoe UI";
   font-size: 16px;
   margin-top: 52px;
 }
@@ -29,7 +29,7 @@
 .About__font {
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 1.6;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
@@ -88,11 +88,11 @@
 
 .About__element--section {
   display: block;
-  font-family: Noir-Noir;
+  font-family: Noir-Noir, "Segoe UI";
   font-size: 48px;
 }
 .About__element--subsection {
-  font-family: Noir-Noir;
+  font-family: Noir-, "Segoe UI";
   font-size: 18px;
 }
 
@@ -219,5 +219,11 @@
   }
   .About__element--subsection {
     font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .About__root {
+    width: auto;
   }
 }

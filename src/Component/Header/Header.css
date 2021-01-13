@@ -19,7 +19,7 @@
   padding: 20px 25px;
   transition: all 0.3s ease;
   font-size: 17px;
-  font-family: Manrope;
+  font-family: Manrope, "Segoe UI";
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -27,8 +27,13 @@
   letter-spacing: normal;
 }
 
+.tabs__logo__tab a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .active {
-  border-bottom: 5px solid #821169;
+  /* border-bottom: 5px solid #821169; */
 }
 
 .tabs__logo__tab:hover {
@@ -41,13 +46,54 @@
   color: #821169;
 }
 
+.mobile__tabs {
+  height: 39px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 39px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  background-color: #1e022c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.mobile__tabs__logo {
+  height: 39px;
+  width: 66px;
+}
+
+.blank {
+  color: #1e022c;
+  height: 30px;
+  width: 40px;
+}
+
+.hamburger {
+  color: #821169;
+  font-size: 20px;
+  padding-right: 15.5px;
+}
+
+@media screen and (min-width: 600px) {
+  .mobile__tabs {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .tabs__logo__tab {
     padding: 10px;
   }
 }
+
 @media screen and (max-width: 600px) {
-  .tab {
+  .tabs {
     display: none;
+    font-size: 2000px;
   }
 }
