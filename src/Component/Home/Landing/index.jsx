@@ -18,7 +18,9 @@ class Landing extends Component {
             <div className="landing__text--font landing__text--sub-section">
               2020
             </div>
-            <div></div>
+            <div className="landing__text--font landing__text--virtual">
+              A Virtual Contets
+          </div>
           </div>
         </div>
         <Handle />
