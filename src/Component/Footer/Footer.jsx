@@ -12,7 +12,9 @@ import cclogo from "../../Assets/Images/inslogo.png";
 
 const Footer = () => {
  
-  const link_toogle = () => {
+  const link_toogle = (e) => {
+    var x = e.target.style.transform == 'rotate(180deg)'? e.target.style.transform = 'rotate(0deg)': e.target.style.transform = 'rotate(180deg)';
+    
     var element = document.getElementById("cyka");
 
     if (element.classList) { 
@@ -48,7 +50,7 @@ const Footer = () => {
               LINKS
               <hr className="underline"></hr>
             </div>
-            <div class="link-toogle" onClick = {() => link_toogle()} >
+            <div class="link-toogle" onClick = {(e) => link_toogle(e)} >
               <i class="fa fa-angle-down fa-2x" aria-hidden="true" color="white"></i>
             </div>
           </div>
