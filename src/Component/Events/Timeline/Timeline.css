@@ -97,3 +97,9 @@
 		display: none;
 	}
 }
+
+@media(max-width:600px){
+	.timeline{
+		margin-top: 68px;
+	}
+}

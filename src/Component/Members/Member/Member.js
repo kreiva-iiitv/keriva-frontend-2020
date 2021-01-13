@@ -1,7 +1,7 @@
 import React from 'react';
 import './Member.css';
 import "font-awesome/css/font-awesome.min.css";
-import  g1 from "../../../Assets/Images/gallery1.jpg";
+// import  g1 from "../../../Assets/Images/gallery1.jpg";
 
 const Member = (props)=>{
 
@@ -10,7 +10,7 @@ const Member = (props)=>{
 			<div className="member__card__border">
 				<div className="member__card">
 					<div className="member__card__image">
-						<img className="member__card__image__img" src={g1}/>
+						<img className="member__card__image__img" src=""/>
 					</div>
 
 					<div className="member__card__details">
