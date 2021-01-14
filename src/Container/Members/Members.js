@@ -12,12 +12,14 @@ class Members extends React.Component{
 	};
 
 	render(){
+		const a =[1,2,3,4,5,6,7]
+		const members = a.map((q)=><Member/>)
 		return(
 			<React.Fragment>
 				<Header/>
 				<Navbar/>
-				<div>
-					<Member/>
+				<div className="members">
+					{members}
 				</div>
 				<Footer/>
 			</React.Fragment>

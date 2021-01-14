@@ -1,0 +1,42 @@
+.members{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 224px;
+	row-gap:84px;
+	justify-content: center;
+	margin-bottom: 84px;
+	margin-top: 41.6px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 1280px) and (min-width: 1080px){
+
+.members{
+	column-gap: 199.11px;
+	row-gap:74.66px;
+	margin-bottom: 74.66px;
+}
+
+}
+
+
+@media (max-width: 1080px) and (min-width: 800px){
+
+.members{
+	column-gap: 168px;
+	row-gap:63px;
+	margin-bottom: 63px;
+}
+
+}
+
+@media (max-width: 800px) and (min-width: 600px){
+
+.members{
+	column-gap: 123.2px;
+	row-gap: 46.2px;
+	margin-bottom: 46.2px;
+}
+
+}

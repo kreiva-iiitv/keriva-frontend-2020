@@ -199,7 +199,7 @@
 	font-weight: normal;
 }
 
-@media (min-width: 600px) and (max-width: 800px){
+@media screen and (max-width: 800px){
 
 .timeline-card__details__title{
 	font-size: 13.33px;
@@ -421,7 +421,7 @@
 	font-weight: normal;
 }
 
-@media(min-width: 600px){
+@media screen and (min-width:601px){
 	.timeline-card--mobile{
 		display: none;
 	}
