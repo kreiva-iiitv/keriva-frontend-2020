@@ -3,36 +3,18 @@ import './Navbar.css';
 
 
 const Navbar=(props)=>{
+	console.log(props)
+	const NavbarTabs = props.teamNames!==null?props.teamNames.map((name,i)=> 			
+		<div className={`members__navbar__tab ${props.currentTab===i?`members__navbar__tab__current`:``}`}
+			 onClick={()=>{return props.changeCurrentTab(i)}}>
+				<span>{`${name.toUpperCase()} TEAM`}</span>
+		</div>
+		):null;
+
 	return(
 		<div className="members__navbar">
 
-			<div className="members__navbar__tab">
-				<span>CORE TEAM</span>
-			</div>
-			
-			<div className="members__navbar__tab">
-				<span>DESIGN TEAM</span>
-			</div>
-
-			<div className="members__navbar__tab">
-				<span>WEB TEAM</span>
-			</div>
-
-			<div className="members__navbar__tab">
-				<span>CORE TEAM</span>
-			</div>
-
-			<div className="members__navbar__tab">
-				<span>CORE TEAM</span>
-			</div>
-
-			<div className="members__navbar__tab">
-				<span>CORE TEAM</span>
-			</div>
-
-			<div className="members__navbar__tab">
-				<span>CORE TEAM</span>
-			</div>
+			{NavbarTabs}
 
 		</div>
 		);

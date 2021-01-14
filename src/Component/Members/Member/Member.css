@@ -96,17 +96,21 @@
 	/*margin-top: 0.55vw;*/
     margin-top: 13px;
     margin-bottom: 12px;
-	display: flex;
-	flex-direction: row;
+	/*display: flex;*/
+	/*flex-direction: row;*/
 	/*gap: 3.75vw;*/
-	gap: 54px;
+	/*gap: 54px;*/
 	/*font-size: 1.67vw;*/
 	font-size: 24px;
-	color: #909090;
+	/*color: #909090;*/
 
 }
 
-.member__card__links>div>div:hover{
+.member__card__links>a{
+	color: #909090;
+}
+
+.member__card__links>a:hover{
 	cursor: pointer;
 	color: white;
 }
@@ -151,7 +155,7 @@
 .member__card__links{
     margin-top: calc(13px*var(--fix1280));
     margin-bottom: calc(12px*var(--fix1280));
-	gap: calc(54px*var(--fix1280));
+	/*gap: calc(54px*var(--fix1280));*/
 	font-size: calc(24px*var(--fix1280));
 }
 
@@ -197,7 +201,7 @@
 .member__card__links{
     margin-top: calc(13px*var(--fix1080));
     margin-bottom: calc(12px*var(--fix1080));
-	gap: calc(54px*var(--fix1080));
+	/*gap: calc(54px*var(--fix1080));*/
 	font-size: calc(24px*var(--fix1080));
 }
 
@@ -244,7 +248,7 @@
 .member__card__links{
     margin-top: calc(13px*var(--fix800));
     margin-bottom: calc(12px*var(--fix800));
-	gap: calc(54px*var(--fix800));
+	/*gap: calc(54px*var(--fix800));*/
 	font-size: calc(24px*var(--fix800));
 }
 
@@ -291,7 +295,7 @@
 .member__card__links{
     margin-top: 12.7px;
     margin-bottom: 12.8px;
-	gap: 45.5px;
+	/*gap: 45.5px;*/
 	font-size: 20.2px;
 }
 
