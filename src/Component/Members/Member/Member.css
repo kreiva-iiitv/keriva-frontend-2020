@@ -251,3 +251,48 @@
 }
 
 
+@media(max-width: 600px){
+
+.member__card__border{
+    width: 296px;
+    height: 349px;
+    border: solid 1px #821169;
+    border-radius: 15px;
+}
+
+.member__card{
+	width: 270px;
+    padding-top: 11px;
+}	
+
+.member__card__image{
+	width: 270px;
+	height: 270px;
+}
+
+.member__card__details{
+	padding-top: 12.2px;
+}
+
+.member__card__details__text__name{
+	font-size: 16px;
+} 
+
+.member__card__details__text__position{
+	font-size: 14px;
+}
+
+.member__card__hr{
+	height: 1px;
+    width: 180px;
+	margin-top: 11.5px;
+}
+
+.member__card__links{
+    margin-top: 12.7px;
+    margin-bottom: 12.8px;
+	gap: 45.5px;
+	font-size: 20.2px;
+}
+
+}
