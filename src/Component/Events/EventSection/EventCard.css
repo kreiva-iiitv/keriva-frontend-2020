@@ -1,20 +1,24 @@
 .EventCard{
     width: 80%;
-    height: 472px;
+    height: auto;
     display: flex;
     margin: 50px 0;
 }
 
 .EventCard__image{
-    height: 100%;
     width: 40%;
     background-color: #37053b;
+}
+
+.imageEvent{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .EventCard__profile{
     width: 60%;
     display: block;
-    height: 100%;
     box-sizing: border-box;
     padding: 30px 34px;
     background: linear-gradient(to right,#471259,#2a1f6f);
@@ -39,12 +43,10 @@
 .EventCard__profile__container{
     display: flex;
     width: 100%;
-    height: 70%;
 }
 
 .EventCard__profile__container__table{
     width: 75%;
-    
 }
 
 .EventCard__profile__container__table__head{
@@ -78,7 +80,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60%;
     border-left: 3px solid white;
 }
 .EventCard__profile__container__right__social__list{
@@ -112,7 +113,18 @@
     font-weight: 700;
     cursor: pointer;
     outline: none;
-}   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.EventCard__profile__container__right__register__button:hover{
+    background: transparent;
+}
 
 .icon{
     cursor: pointer;
@@ -123,9 +135,6 @@
 }
 
 @media only screen and (max-width:1340px){
-    .EventCard{
-        height: 400px;
-    }
     .EventCard__profile__head{
         font-size: 35px;
         padding:10px 0;
@@ -154,9 +163,6 @@
 }
 
 @media only screen and (max-width:1000px){
-    .EventCard{
-        height: 350px;
-    }
     .EventCard__profile{
         padding: 10px 13px;
     }
@@ -202,7 +208,6 @@
 
     .EventCard__profile::-webkit-scrollbar{
         width: 10px;
-        /* max-height: 10%; */
     }
     .EventCard__profile::-webkit-scrollbar-thumb {
         background: #821169; 
@@ -212,13 +217,11 @@
     }
 
     .EventCard__profile::-webkit-scrollbar-track {
-        /* background: rgb(0,0,0); */
         border: 4px solid transparent;
-        background-clip: content-box;   /* THIS IS IMPORTANT */
+        background-clip: content-box; 
     }
 
     .EventCard__profile::-webkit-scrollbar-button {
-        /* width: 50px; //for horizontal scrollbar */
         height: 50px; 
       }
 
@@ -251,13 +254,11 @@
     }
     .onlyMobile__social{
         font-size: 34px;
-        /* display: flex; */
         width: 100%;
     }
     .onlyMobile__social__list{
         list-style: none;
         display: flex;
-        /* width: 100%; */
         margin: 10px 0;
         padding: 10px 16px;
         justify-content: space-around;
@@ -287,5 +288,15 @@
         font-weight: 700;
         cursor: pointer;
         outline: none;   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding-bottom: 5px;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    .onlyMobile__register__button:hover{
+        background: transparent;
     }
 }
