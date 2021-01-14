@@ -19,7 +19,7 @@ class Landing extends Component {
               2020
             </div>
             <div className="landing__text--font landing__text--virtual">
-              A Virtual Contets
+              A Virtual Fest
           </div>
           </div>
         </div>

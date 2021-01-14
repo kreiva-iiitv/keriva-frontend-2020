@@ -18,3 +18,15 @@
     color: white;
     cursor: pointer;
 }
+
+@media screen and (max-width: 800px){
+    .social{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-left: 65px;
+        padding-right: 65px;
+        padding-top: 57.1px;
+        font-size: 24px;
+
+    }
+}
