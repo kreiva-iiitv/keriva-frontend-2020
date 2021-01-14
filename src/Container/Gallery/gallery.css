@@ -103,4 +103,10 @@
   .GalleryHead {
     margin-left: 20px;
   }
+  .prev {
+    display: none;
+  }
+  .next {
+    display: none;
+  }
 }
