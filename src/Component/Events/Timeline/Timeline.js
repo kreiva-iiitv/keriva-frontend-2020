@@ -16,21 +16,39 @@ onCardMouseEvent=(slideIndex)=>{
 }
 
 	render(){
-		const parseDate=(date)=>`${date[0]}${date[1]}Feb'21`;
-		const TimelineCards = events.events.map((event,i)=> <div className="timeline__card">
-																<TimelineCard   title={event.title} 
-																				description={event.description}
-																				prize={event.prize}
-																				startDate={parseDate(event.startDate)}
-																				endDate={parseDate(event.endDate)}
-																				startTime={event.startTime}
-																				endTime={event.endTime}
-																				currentSlide={this.state.currentSlide}
-																				index={i}
-																				onCardMouseEvent={this.onCardMouseEvent}
-																				/>
-																{i<events.events.length-1?(<hr className= "timeline__hr"/>):null}
-															</div>);
+		console.log(this.props);
+		const parseDate=(date)=>`${date[5]}${date[6]}Feb'21`;
+
+		const parseTime=(time)=>{
+			let period = `AM`;
+			let hours = Number(`${time[11]}${time[12]}`);
+			const minutes = Number(`${time[14]}${time[15]}`)!==0?Number(`${time[14]}${time[15]}`): `00`;
+			if(hours>12){
+				hours = hours-12;
+				period= `PM`
+			}
+			else if(hours===0){
+				hours = 12;
+			}
+			return(`${hours}:${minutes} ${period}`)
+		
+		} 
+
+		const TimelineCards = (this.props.events!=="")?
+		(this.props.events.map((event,i)=> <div className="timeline__card">
+																		<TimelineCard   title={event.name} 
+																						description={event.long_description}
+																						prize={event.prize}
+																						startDate={parseDate(event.start_time)}
+																						endDate={parseDate(event.end_time)}
+																						startTime={parseTime(event.start_time)}
+																						endTime={parseTime(event.end_time)}
+																						currentSlide={this.state.currentSlide}
+																						index={i}
+																						onCardMouseEvent={this.onCardMouseEvent}
+																						/>
+																		{i<events.events.length-1?(<hr className= "timeline__hr"/>):null}
+																	</div>)): undefined;
 		return(
 			<div className="timeline">
 				<div className="timeline__content">
