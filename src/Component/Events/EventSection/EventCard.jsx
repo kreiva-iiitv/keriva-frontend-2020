@@ -5,52 +5,52 @@ import "font-awesome/css/font-awesome.min.css";
 
 function EventCard(props) {
     return (
-        <div className="card">
+        <div className="EventCard">
 
-            <div className="card__image"></div>
+            <div className="EventCard__image"></div>
 
-            <div className="card__profile">
-                <h1 className="card__profile__head">{props.head}</h1>
-                <p className="card__profile__para">
+            <div className="EventCard__profile">
+                <h1 className="EventCard__profile__head">{props.head}</h1>
+                <p className="EventCard__profile__para">
                     {props.desc}
                 </p>
-                <div className="card__profile__container">
-                    <table className="card__profile__container__table">
-                        <tr className="card__profile__container__table__row">
-                            <th className="card__profile__container__table__head">Prize Worth</th>
-                            <td className="card__profile__container__table__desc">{props.details.prizeWorth}</td>
+                <div className="EventCard__profile__container">
+                    <table className="EventCard__profile__container__table">
+                        <tr className="EventCard__profile__container__table__row">
+                            <th className="EventCard__profile__container__table__head">Prize Worth</th>
+                            <td className="EventCard__profile__container__table__desc">{props.details.prizeWorth}</td>
                         </tr>
-                        <tr className="card__profile__container__table__row">
-                            <th className="card__profile__container__table__head">Venue</th>
-                            <td className="card__profile__container__table__desc">{props.details.Venue}</td>
+                        <tr className="EventCard__profile__container__table__row">
+                            <th className="EventCard__profile__container__table__head">Venue</th>
+                            <td className="EventCard__profile__container__table__desc">{props.details.Venue}</td>
                         </tr>
-                        <tr className="card__profile__container__table__row">
-                            <th className="card__profile__container__table__head">Date and Time</th>
-                            <td className="card__profile__container__table__desc">{props.details.Date}</td>
+                        <tr className="EventCard__profile__container__table__row">
+                            <th className="EventCard__profile__container__table__head">Date and Time</th>
+                            <td className="EventCard__profile__container__table__desc">{props.details.Date}</td>
                         </tr>
-                        <tr className="card__profile__container__table__row">
-                            <th className="card__profile__container__table__head">Convenor</th>
-                            <td className="card__profile__container__table__desc">{props.details.Convenor}</td>
+                        <tr className="EventCard__profile__container__table__row">
+                            <th className="EventCard__profile__container__table__head">Convenor</th>
+                            <td className="EventCard__profile__container__table__desc">{props.details.Convenor}</td>
                         </tr>
-                        <tr className="card__profile__container__table__row">
-                            <th className="card__profile__container__table__head">Co-Convenor</th>
-                            <td className="card__profile__container__table__desc">{props.details.CoConvenor}</td>
+                        <tr className="EventCard__profile__container__table__row">
+                            <th className="EventCard__profile__container__table__head">Co-Convenor</th>
+                            <td className="EventCard__profile__container__table__desc">{props.details.CoConvenor}</td>
                         </tr>
-                        <tr className="card__profile__container__table__row">
-                            <th className="card__profile__container__table__head">Members</th>
-                            <td className="card__profile__container__table__desc">{props.details.Members}</td>
+                        <tr className="EventCard__profile__container__table__row">
+                            <th className="EventCard__profile__container__table__head">Members</th>
+                            <td className="EventCard__profile__container__table__desc">{props.details.Members}</td>
                         </tr>
                     </table>
-                    <div className="card__profile__container__right">
-                        <div className="card__profile__container__right__social" >
-                            <ul className="card__profile__container__right__social__list">
+                    <div className="EventCard__profile__container__right">
+                        <div className="EventCard__profile__container__right__social" >
+                            <ul className="EventCard__profile__container__right__social__list">
                                 <li><i className="fa fa-instagram icon"></i></li>
                                 <li><i className="fa fa-facebook-square icon"></i></li>
                                 <li><i className="fa fa-envelope-square icon"></i></li>
                             </ul>
                         </div>
-                        <div className="card__profile__container__right__register">
-                            <button className="card__profile__container__right__register__button">Register</button>
+                        <div className="EventCard__profile__container__right__register">
+                            <button className="EventCard__profile__container__right__register__button">Register</button>
                         </div>
                     </div>
                 </div>
