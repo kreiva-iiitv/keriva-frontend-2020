@@ -1,0 +1,113 @@
+.members__navbar{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: auto;
+  width: 89%;
+  background-color: #1e022c;
+  color: white;
+  margin-top: 48px;
+}
+
+.members__navbar__tab{
+
+  align-self: center;
+  /*padding: 18px 29px;*/
+  transition: all 0.3s ease;
+  font-size: 22px;
+  font-family: Manrope, "Segoe UI";
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  width: 179px;
+  height: 62px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid transparent;	
+}
+
+.members__navbar__tab:hover {
+  border-bottom: 5px solid #821169;
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) and (min-width: 1080px){
+
+.members__navbar__tab{
+  font-size: 19.36px;
+  width: 157.52px;
+  height: 54.56px;
+  border-bottom: 4.4px solid transparent;	
+}
+
+.members__navbar__tab:hover {
+  border-bottom: 4.4px solid #821169;
+}
+
+
+}
+
+
+@media (max-width: 1080px) and (min-width: 800px){
+
+.members__navbar__tab{
+  font-size: 16.5px;
+  width: 134.25px;
+  height: 46.5px;
+  border-bottom: 3.75px solid transparent;	
+}
+
+.members__navbar__tab:hover {
+  border-bottom: 3.75px solid #821169;
+}
+
+}
+
+@media (max-width: 800px) and (min-width: 600px){
+
+.members__navbar{
+  margin-top: 36px;
+}
+
+.members__navbar__tab{
+  font-size: 12.1px;
+  width: 98.45px;
+  height: 34.1px;
+  border-bottom: 2.75px solid transparent;	
+}
+
+.members__navbar__tab:hover {
+  border-bottom: 2.75px solid #821169;
+}
+
+
+}
+
+@media(max-width: 600px){
+
+.members__navbar{
+	overflow: scroll;
+	margin-top: 4px;
+	justify-content: flex-start;
+}
+
+.members__navbar__tab{
+  font-size: 18px;
+  width: 133px;
+  height: 24px;
+  border-bottom: 2px solid transparent;	
+  padding:5px 16px;
+}
+
+.members__navbar__tab:hover {
+  border-bottom: 2px solid #821169;
+}
+
+.members__navbar__tab>span{
+	width: max-content;
+}
+
+}
