@@ -18,20 +18,20 @@ function Gallery() {
         <Slider>
           <Slide index={0}>
             <div className="largeImg">
-              <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" />
+              <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" draggable="false" />
             </div>
           </Slide>
           <Slide index={1}>
             <div className="midContainer">
               <div className="upper">
-                <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" />
+                <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" draggable="false" />
               </div>
               <div className="subContainer">
                 <div className="lower1">
-                  <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" />
+                  <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" draggable="false" />
                 </div>
                 <div className="lower1">
-                  <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" />
+                  <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" draggable="false" />
                 </div>
 
               </div>
@@ -39,27 +39,27 @@ function Gallery() {
           </Slide>
           <Slide index={2}>
             <div className="largeImg">
-              <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" />
+              <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" draggable="false" />
             </div>
           </Slide>
           <Slide index={3}>
             <div className="midContainer">
               <div className="upper">
-                <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" />
+                <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" draggable="false" />
               </div>
               <div className="subContainer">
                 <div className="lower1">
-                  <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" />
+                  <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" draggable="false" />
                 </div>
                 <div className="lower1">
-                  <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" />
+                  <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" draggable="false" />
                 </div>
               </div>
             </div>
           </Slide>
           <Slide index={4}>
             <div className="largeImg">
-              <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" />
+              <img src="https://dummyimage.com/500x500/37053b/000000.png&text=+" alt="kreiva gallery" draggable="false" />
             </div>
           </Slide>
         </Slider>
