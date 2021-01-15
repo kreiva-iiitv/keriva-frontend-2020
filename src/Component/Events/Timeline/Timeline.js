@@ -2,6 +2,7 @@ import React from 'react';
 import TimelineCard from '../TimelineCard/TimelineCard';
 import './Timeline.css';
 import events from './event-details.json';
+import Fade from 'react-reveal/Fade'
 class Timeline extends React.Component{
 
 	constructor(props){
@@ -35,7 +36,25 @@ onCardMouseEvent=(slideIndex)=>{
 		} 
 
 		const TimelineCards = (this.props.events!=="")?
-		(this.props.events.map((event,i)=> <div className="timeline__card">
+		(this.props.events.map((event,i) => {
+			if(i%2){
+				return <Fade left><div className="timeline__card">
+				<TimelineCard   title={event.name} 
+								description={event.long_description}
+								prize={event.prize}
+								startDate={parseDate(event.start_time)}
+								endDate={parseDate(event.end_time)}
+								startTime={parseTime(event.start_time)}
+								endTime={parseTime(event.end_time)}
+								currentSlide={this.state.currentSlide}
+								index={i}
+								onCardMouseEvent={this.onCardMouseEvent}
+								/>
+
+				{i<events.events.length-1?(<hr className= "timeline__hr"/>):null}
+			</div></Fade>
+			}else{
+				return <Fade right><div className="timeline__card">
 																		<TimelineCard   title={event.name} 
 																						description={event.long_description}
 																						prize={event.prize}
@@ -47,8 +66,11 @@ onCardMouseEvent=(slideIndex)=>{
 																						index={i}
 																						onCardMouseEvent={this.onCardMouseEvent}
 																						/>
+
 																		{i<events.events.length-1?(<hr className= "timeline__hr"/>):null}
-																	</div>)): undefined;
+																	</div></Fade>
+			}
+		})): undefined;
 		return(
 			<div className="timeline">
 				<div className="timeline__content">
