@@ -7,10 +7,11 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Home} />
+       
         <Route exact path="/events" component={Event} />
         <Route exact path="/members" component={Home} />
         <Route exact path="#" component={Home} />
+        <Route exact path="/" component={Home} />
       </Switch>
     </BrowserRouter>
   );

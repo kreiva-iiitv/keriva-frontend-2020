@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 const SideDrawer = (props) => {
 
   return (
-    <div>
       <div className={"SideDrawer " + (props.open ? 'Open' : 'Close')}>
         <div onClick={props.closed}>
           <i class="fa fa-bars side__hamburger" onClick={props.opened}></i>
@@ -14,16 +13,16 @@ const SideDrawer = (props) => {
 
         <div className="side__tabs">
           <div className="side__tab " >
-            <NavLink activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/'>HOME</NavLink>
+            <NavLink exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/'>HOME</NavLink>
           </div>
           <div className="side__tab">
-            <NavLink activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/events'>EVENTS</NavLink>
+            <NavLink exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/events'>EVENTS</NavLink>
           </div>
           <div className="side__tab">
-            <NavLink activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/members'>MEMBERS</NavLink>
+            <NavLink exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/members'>MEMBERS</NavLink>
           </div>
           <div className="side__tab">
-            <NavLink activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/brochure'>BROCHURE</NavLink>
+            <NavLink exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/brochure'>BROCHURE</NavLink>
           </div>
         </div>
 
@@ -43,7 +42,6 @@ const SideDrawer = (props) => {
         </div>
 
       </div>
-    </div>
 
   );
 };
