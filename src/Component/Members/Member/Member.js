@@ -11,36 +11,24 @@ const Member = (props)=>{
 			</div>
 			<div className="member__card">
 				<div className="member__card__image">
-					<img className="member__card__image__img" src={g1}/>
+					<img className="member__card__image__img" src={`https://gaurkrishna.pythonanywhere.com${props.imgSrc}`}/>
 				</div>
 
 				<div className="member__card__details">
 					<div className="member__card__details__text">
 						<div className="member__card__details__text__name">
-							<span>ENTER NAME</span>
+							<span>{props.name}</span>
 						</div>
 
 						<div className="member__card__details__text__position">
-							<span>Enter Position</span>
+							<span>{props.position}</span>
 						</div>
 					</div>
 
 					<hr className="member__card__hr"/>
 
 					<div className="member__card__links">
-
-						<div>
-							<div className="fa fa-instagram member__card__links__instagram"></div>
-						</div>
-
-						<div>
-							<div className="fa fa-github member__card__links__github"></div>
-						</div>
-
-						<div>
-							<div className="fa fa-linkedin member__card__links__linkedin"></div>
-						</div>
-
+						<a href= {props.linkedIn}><span className="fa fa-linkedin member__card__links__linkedin"></span></a>
 					</div>
 				</div>
 			</div>
