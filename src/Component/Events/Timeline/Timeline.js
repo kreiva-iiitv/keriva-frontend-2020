@@ -1,7 +1,6 @@
 import React from 'react';
 import TimelineCard from '../TimelineCard/TimelineCard';
 import './Timeline.css';
-import events from './event-details.json';
 import Fade from 'react-reveal/Fade'
 class Timeline extends React.Component{
 
