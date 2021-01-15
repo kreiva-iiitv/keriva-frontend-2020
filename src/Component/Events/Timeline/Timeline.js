@@ -7,7 +7,7 @@ class Timeline extends React.Component{
 	constructor(props){
 		super(props);
 		this.state={
-			currentSlide: -1,
+			currentSlide: 0,
 		}
 	}
 
@@ -16,7 +16,7 @@ onCardMouseEvent=(slideIndex)=>{
 }
 
 	render(){
-		console.log(this.props);
+		// console.log(this.props);
 		const parseDate=(date)=>`${date[5]}${date[6]}Feb'21`;
 
 		const parseTime=(time)=>{

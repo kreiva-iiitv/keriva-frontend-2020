@@ -1,7 +1,6 @@
 import React from 'react';
 import './Member.css';
 import "font-awesome/css/font-awesome.min.css";
-import  g1 from "../../../Assets/Images/Elon.jpg";
 
 const Member = (props)=>{
 
@@ -11,7 +10,7 @@ const Member = (props)=>{
 			</div>
 			<div className="member__card">
 				<div className="member__card__image">
-					<img className="member__card__image__img" src={`https://gaurkrishna.pythonanywhere.com${props.imgSrc}`}/>
+					<img className="member__card__image__img" src={`${props.imgSrc}`} alt = {props.name}/>
 				</div>
 
 				<div className="member__card__details">
@@ -28,7 +27,7 @@ const Member = (props)=>{
 					<hr className="member__card__hr"/>
 
 					<div className="member__card__links">
-						<a href= {props.linkedIn}><span className="fa fa-linkedin member__card__links__linkedin"></span></a>
+						<a href= {props.linkedIn} target="_blank"><span className="fa fa-linkedin member__card__links__linkedin"></span></a>
 					</div>
 				</div>
 			</div>

@@ -16,7 +16,7 @@ class TimelineIndex extends React.Component{
 		try{
 			const response = await fetch(`https://gaurkrishna.pythonanywhere.com/event/`);
 			const responseJSON = await response.json();
-			// console.log(responseJSON);
+			console.log(responseJSON);
 			this.setState({events: responseJSON.Events})
 		}catch(error){
 			console.log(error);
@@ -26,7 +26,7 @@ class TimelineIndex extends React.Component{
 	}
 
 	render(){
-		console.log(this.state);
+		// console.log(this.state);
 		return(
 	    <React.Fragment>
 	      <Navigation />
