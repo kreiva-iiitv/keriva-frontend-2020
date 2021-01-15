@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import "./footcss.css";
+import "./Footer.css";
 import 'font-awesome/css/font-awesome.min.css';
 
 //import images
@@ -58,7 +58,7 @@ const Footer = () => {
             <a href="" className="link">Home</a>
             <a href="" className="link">Events</a>
             <a href="" className="link">Members</a>
-            <a href="" className="link">Institute Site</a>
+            <a href="http://iiitvadodara.ac.in/" className="link">Institute Site</a>
           </div>
         </div>
 
@@ -68,9 +68,9 @@ const Footer = () => {
           <hr className="underline"></hr>
         </div>
         <div className="contact">
-          <div className="clink">Email: <div className="con-details">cerebro@iiitvadodara.ac.in</div></div>
-          <div className="clink">Phone: <div className="con-details">+915525252536  +91242526252652  +9135252252255</div></div>
-          <div className="clink">Address: <div className="con-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div></div>
+          <div className="clink">Email: <div className="con-details">cultural_sec@iiitvadodara.ac.in</div></div>
+          <div className="clink">Phone: <div className="con-details">+91 7821905696  +91 8209270352  +91 9009429181</div></div>
+          <div className="clink">Address: <div className="con-details">c/o Block No.9, Government Engineering College Campus, Sector-28, Gandhinagar, Gujarat - 382028</div></div>
         </div>
         </div>
       </div>
