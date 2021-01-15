@@ -50,7 +50,7 @@ onCardMouseEvent=(slideIndex)=>{
 								onCardMouseEvent={this.onCardMouseEvent}
 								/>
 
-				{i<events.events.length-1?(<hr className= "timeline__hr"/>):null}
+				{i<this.props.events.length-1?(<hr className= "timeline__hr"/>):null}
 			</div></Fade>
 			}else{
 				return <Fade right><div className="timeline__card">
@@ -66,7 +66,7 @@ onCardMouseEvent=(slideIndex)=>{
 																						onCardMouseEvent={this.onCardMouseEvent}
 																						/>
 
-																		{i<events.events.length-1?(<hr className= "timeline__hr"/>):null}
+																		{i<this.props.events.length-1?(<hr className= "timeline__hr"/>):null}
 																	</div></Fade>
 			}
 		})): undefined;
