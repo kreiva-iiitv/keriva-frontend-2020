@@ -29,8 +29,7 @@ class Members extends React.Component{
 	}
 
 	render(){
-		console.log(this.state.teams);
-		const a =[1,2,3,4,5,6,7];
+		// console.log(this.state.teams);
 		const teamNames = this.state.teams!==""?this.state.teams.map((team)=>team.name):null;
 		const CurrentTabMembers = this.state.teams!==""?this.state.teams[this.state.currentTab].teamMembers.map(
 									(member)=><Member imgSrc={member.profilepic}
