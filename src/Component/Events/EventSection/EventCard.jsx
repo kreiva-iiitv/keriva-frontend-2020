@@ -2,12 +2,13 @@ import React from 'react'
 import './EventCard.css'
 import "font-awesome/css/font-awesome.min.css";
 
-
 function EventCard(props) {
+
+
     return (
         <div className="EventCard">
 
-            <div className="EventCard__image"></div>
+            <div className="EventCard__image"><img className="imageEvent" alt="poster" src={props.poster}/></div>
 
             <div className="EventCard__profile">
                 <h1 className="EventCard__profile__head">{props.head}</h1>
@@ -18,39 +19,39 @@ function EventCard(props) {
                     <table className="EventCard__profile__container__table">
                         <tr className="EventCard__profile__container__table__row">
                             <th className="EventCard__profile__container__table__head">Prize Worth</th>
-                            <td className="EventCard__profile__container__table__desc">{props.details.prizeWorth}</td>
+                            <td className="EventCard__profile__container__table__desc">{props.prize}</td>
                         </tr>
                         <tr className="EventCard__profile__container__table__row">
                             <th className="EventCard__profile__container__table__head">Venue</th>
-                            <td className="EventCard__profile__container__table__desc">{props.details.Venue}</td>
+                            <td className="EventCard__profile__container__table__desc">{props.venue}</td>
                         </tr>
                         <tr className="EventCard__profile__container__table__row">
                             <th className="EventCard__profile__container__table__head">Date and Time</th>
-                            <td className="EventCard__profile__container__table__desc">{props.details.Date}</td>
+                            <td className="EventCard__profile__container__table__desc">{props.startD} to {props.endD}</td>
                         </tr>
                         <tr className="EventCard__profile__container__table__row">
                             <th className="EventCard__profile__container__table__head">Convenor</th>
-                            <td className="EventCard__profile__container__table__desc">{props.details.Convenor}</td>
+                            <td className="EventCard__profile__container__table__desc">{props.convenor.first_name} {props.convenor.last_name} </td>
                         </tr>
                         <tr className="EventCard__profile__container__table__row">
                             <th className="EventCard__profile__container__table__head">Co-Convenor</th>
-                            <td className="EventCard__profile__container__table__desc">{props.details.CoConvenor}</td>
+                            <td className="EventCard__profile__container__table__desc">{props.coConvenor.first_name} {props.coConvenor.last_name}</td>
                         </tr>
                         <tr className="EventCard__profile__container__table__row">
-                            <th className="EventCard__profile__container__table__head">Members</th>
-                            <td className="EventCard__profile__container__table__desc">{props.details.Members}</td>
+                            <th className="EventCard__profile__container__table__head">Committe-Cordinator</th>
+                            <td className="EventCard__profile__container__table__desc">{props.committeCordinator.first_name} {props.committeCordinator.last_name}</td>
                         </tr>
                     </table>
                     <div className="EventCard__profile__container__right">
                         <div className="EventCard__profile__container__right__social" >
                             <ul className="EventCard__profile__container__right__social__list">
-                                <li><i className="fa fa-instagram icon"></i></li>
-                                <li><i className="fa fa-facebook-square icon"></i></li>
-                                <li><i className="fa fa-envelope-square icon"></i></li>
+                                <li><a style={{color:'white'}} href={props.insta}><i className="fa fa-instagram icon"></i></a></li>
+                                <li><a style={{color:'white'}} href={props.fb}><i className="fa fa-facebook-square icon"></i></a></li>
+                                <li><a style={{color:'white'}} href={props.email}><i className="fa fa-envelope-square icon"></i></a></li>
                             </ul>
                         </div>
                         <div className="EventCard__profile__container__right__register">
-                            <button className="EventCard__profile__container__right__register__button">Register</button>
+                            <a target="_blank" rel="noreferrer" href={props.googleLink} className="EventCard__profile__container__right__register__button">Register</a>
                         </div>
                     </div>
                 </div>
@@ -60,13 +61,13 @@ function EventCard(props) {
                 <div className="onlyMobile__hr"></div>
                 <div className="onlyMobile__social" >
                     <ul className="onlyMobile__social__list">
-                        <li><i className="fa fa-instagram icon"></i></li>
-                        <li><i className="fa fa-facebook-square icon"></i></li>
-                        <li><i className="fa fa-envelope-square icon"></i></li>
+                        <li><a style={{color:'white'}} href={props.insta}><i className="fa fa-instagram icon"></i></a></li>
+                        <li><a style={{color:'white'}} href={props.fb}><i className="fa fa-facebook-square icon"></i></a></li>
+                        <li><a style={{color:'white'}} href={props.email}><i className="fa fa-envelope-square icon"></i></a></li>
                     </ul>
                 </div>
                 <div className="onlyMobile__register">
-                    <button className="onlyMobile__register__button">Register</button>
+                    <a target="_blank" rel="noreferrer" href={props.googleLink} className="onlyMobile__register__button">Register</a>
                 </div>
             </div>
         </div>

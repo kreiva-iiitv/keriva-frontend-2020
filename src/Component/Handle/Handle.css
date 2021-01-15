@@ -3,10 +3,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-left: 35%;
     padding-right: 35%;
-    /* padding-bottom: 5%; */
-    padding-top: 2%;
-    font-size: 2em;
+    margin-top: 50px;
+    font-size: 34px;
     z-index: 1000;
+    text-align: center;
 }
 
 .s{
@@ -17,4 +17,16 @@
 .s:hover{
     color: white;
     cursor: pointer;
+}
+
+@media screen and (max-width: 800px){
+    .social{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-left: 65px;
+        padding-right: 65px;
+        padding-top: 57.1px;
+        font-size: 24px;
+
+    }
 }
