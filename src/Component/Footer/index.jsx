@@ -1,14 +1,14 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
-import "./footcss.css";
 import 'font-awesome/css/font-awesome.min.css';
-
-//import images
-import inslogo from "../../Assets/Images/inslogo.png";
 import dotlogo from "../../Assets/Images/dot.png";
 import cclogo from "../../Assets/Images/inslogo.png";
+import inslogo from "../../Assets/Images/inslogo.png";
 
+//styles import
+import './Footer.css';
 
 const Footer = () => {
  
@@ -55,10 +55,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="links" id="cyka">
-            <a href="" className="link">Home</a>
-            <a href="" className="link">Events</a>
-            <a href="" className="link">Members</a>
-            <a href="" className="link">Institute Site</a>
+            <NavLink to="/" className="link">Home</NavLink>
+            <NavLink to="/events" className="link">Events</NavLink>
+            <NavLink to="/members" className="link">Members</NavLink>
+            <a href="http://iiitvadodara.ac.in/" className="link">Institute Site</a>
           </div>
         </div>
 
@@ -68,9 +68,9 @@ const Footer = () => {
           <hr className="underline"></hr>
         </div>
         <div className="contact">
-          <div className="clink">Email: <div className="con-details">cerebro@iiitvadodara.ac.in</div></div>
-          <div className="clink">Phone: <div className="con-details">+915525252536  +91242526252652  +9135252252255</div></div>
-          <div className="clink">Address: <div className="con-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div></div>
+          <div className="clink">Email: <div className="con-details">cultural_sec@iiitvadodara.ac.in</div></div>
+          <div className="clink">Phone: <div className="con-details">+91 7821905696  +91 8209270352  +91 9009429181</div></div>
+          <div className="clink">Address: <div className="con-details">c/o Block No.9, Government Engineering College Campus, Sector-28, Gandhinagar, Gujarat - 382028</div></div>
         </div>
         </div>
       </div>
