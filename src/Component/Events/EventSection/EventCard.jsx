@@ -27,7 +27,7 @@ function EventCard(props) {
                         </tr>
                         <tr className="EventCard__profile__container__table__row">
                             <th className="EventCard__profile__container__table__head">Date and Time</th>
-                            <td className="EventCard__profile__container__table__desc">{props.startD} to {props.endD}</td>
+                            <td className="EventCard__profile__container__table__desc">{props.startD} {props.startT} to {props.endD} {props.endT}</td>
                         </tr>
                         <tr className="EventCard__profile__container__table__row">
                             <th className="EventCard__profile__container__table__head">Convenor</th>
@@ -55,6 +55,7 @@ function EventCard(props) {
                         </div>
                     </div>
                 </div>
+                <div><a style={{color:'white'}} target="_blank" rel="noreferrer" href={props.rules}>Rules and regulation</a></div>
             </div>
             
             <div className="onlyMobile">
@@ -70,6 +71,7 @@ function EventCard(props) {
                     <a target="_blank" rel="noreferrer" href={props.googleLink} className="onlyMobile__register__button">Register</a>
                 </div>
             </div>
+           
         </div>
     )
 }
