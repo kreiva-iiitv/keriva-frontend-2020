@@ -1,14 +1,14 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
-import "./Footer.css";
 import 'font-awesome/css/font-awesome.min.css';
-
-//import images
-import inslogo from "../../Assets/Images/inslogo.png";
 import dotlogo from "../../Assets/Images/dot.png";
 import cclogo from "../../Assets/Images/inslogo.png";
+import inslogo from "../../Assets/Images/inslogo.png";
 
+//styles import
+import './Footer.css';
 
 const Footer = () => {
  
@@ -55,9 +55,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="links" id="cyka">
-            <a href="" className="link">Home</a>
-            <a href="" className="link">Events</a>
-            <a href="" className="link">Members</a>
+            <NavLink to="/" className="link">Home</NavLink>
+            <NavLink to="/events" className="link">Events</NavLink>
+            <NavLink to="/members" className="link">Members</NavLink>
             <a href="http://iiitvadodara.ac.in/" className="link">Institute Site</a>
           </div>
         </div>
