@@ -1,5 +1,5 @@
 .EventCard{
-    width: 80%;
+    /* width: 80%; */
     height: auto;
     display: flex;
     margin: 50px 0;
@@ -188,7 +188,7 @@
     .EventCard{
         height: 744px;
         flex-flow: column;
-        width: 70%;
+        /* width: 70%; */
     }
 
     .EventCard__image{

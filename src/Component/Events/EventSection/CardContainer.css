@@ -7,3 +7,14 @@
     box-sizing: border-box;
     padding: 20px;
 }
+
+.animation_Event{
+    width: 80%;
+}
+
+@media only screen and (max-width:600px){
+    /* width: 90%;4 */
+    .animation_Event{
+        width: 90%;
+    }
+}
