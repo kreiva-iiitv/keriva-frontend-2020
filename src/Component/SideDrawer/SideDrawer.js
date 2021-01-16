@@ -8,7 +8,7 @@ const SideDrawer = (props) => {
     <div>
       <div className={"SideDrawer " + (props.open ? 'Open' : 'Close')}>
         <div onClick={props.closed}>
-          <i class="fa fa-bars side__hamburger" onClick={props.opened}></i>
+          <i className="fa fa-bars side__hamburger" onClick={props.opened}></i>
         </div>
 
         <div className="side__tabs">
@@ -20,16 +20,16 @@ const SideDrawer = (props) => {
 
         <div className="side__handles">
           <div>
-            <i class="fa fa-facebook-square"></i>
+            <i className="fa fa-facebook-square"></i>
           </div>
           <div>
-            <i class="fa fa-instagram"></i>
+            <i className="fa fa-instagram"></i>
           </div>
           <div>
-            <i class="fa fa-linkedin"></i>
+            <i className="fa fa-linkedin"></i>
           </div>
           <div>
-            <i class="fa fa-twitter"></i>
+            <i className="fa fa-twitter"></i>
           </div>
         </div>
 
