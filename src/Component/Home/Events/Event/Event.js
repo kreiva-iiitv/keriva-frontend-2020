@@ -7,7 +7,7 @@ const event = (props) => {
 		<Slide className="Event" index={props.index}>
 			<div className="Event-section__card">
 				<div className={props.index === props.slide ? "imgDiv" : "imgDivSmall"} >
-					<Image alt="img" src="https://dummyimage.com/500x500/37053b/000000.png&text=+" draggable="false" />
+					<Image alt="img" src={props.imgSrc} draggable="false" />
 				</div>
 				<div className={props.index === props.slide ? "text" : "textSmall"}>
 					<div className={props.index === props.slide ? "title" : "titleSmall"}>{props.title}</div>
@@ -17,7 +17,7 @@ const event = (props) => {
 
 			<div className="Event-section__card--mobile">
 				<div className="imgDiv--mobile">
-					<Image alt="img--mobile" src="https://dummyimage.com/500x500/37053b/000000.png&text=+" draggable="false" />
+					<Image alt="img--mobile" src={props.imgSrc} draggable="false" />
 				</div>
 				<div className="text--mobile">
 					<div className="title--mobile">{props.title}</div>

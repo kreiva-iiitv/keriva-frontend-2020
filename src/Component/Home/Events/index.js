@@ -37,7 +37,7 @@ class Events extends React.Component {
 	}
 
 	render() {
-		const eventList = this.props.events.map((event, i) => <Event title={event.title} prize={event.prize} index={i} slide={this.state.currentSlide} />);
+		const eventList = this.props.events.map((event, i) => <Event title={event.name} prize={event.prize} index={i} slide={this.state.currentSlide} imgSrc={event.poster}/>);
 		return (
 			<div>
 				<div>
