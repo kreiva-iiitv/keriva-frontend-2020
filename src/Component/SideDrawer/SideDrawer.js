@@ -13,16 +13,16 @@ const SideDrawer = (props) => {
 
         <div className="side__tabs">
           <div className="side__tab " >
-            <NavLink exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/'>HOME</NavLink>
+            <NavLink onClick={props.closed} exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/'>HOME</NavLink>
           </div>
           <div className="side__tab">
-            <NavLink exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/events'>EVENTS</NavLink>
+            <NavLink onClick={props.closed} exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/events'>EVENTS</NavLink>
           </div>
           <div className="side__tab">
-            <NavLink exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/members'>MEMBERS</NavLink>
+            <NavLink onClick={props.closed} exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/members'>MEMBERS</NavLink>
           </div>
           <div className="side__tab">
-            <NavLink exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/brochure'>BROCHURE</NavLink>
+            <NavLink onClick={props.closed} exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/brochure'>BROCHURE</NavLink>
           </div>
         </div>
 
