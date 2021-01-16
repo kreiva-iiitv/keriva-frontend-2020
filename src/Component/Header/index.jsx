@@ -18,7 +18,7 @@ function Header({ opened }) {
 
         <div>
           <img className="tabs__logo" src={logo} alt="dates" />
-          <p className="tabs__logo--date">28th Dec 2020 - 10th Jan 2021</p>
+          <p className="tabs__logo--date">31st Jan 2021 - 14th Feb 2021</p>
         </div>
 
         <div className="tabs__logo__tab">
@@ -32,9 +32,9 @@ function Header({ opened }) {
 
 
       <div className="mobile__tabs">
-        <div><i class="fa fa-bars blank"></i></div>
+        <div><i className="fa fa-bars blank"></i></div>
         <img className="mobile__tabs__logo" src={logo} alt="tabs icon" />
-        <div onClick={opened} ><i class="fa fa-bars hamburger"></i></div>
+        <div onClick={opened} ><i className="fa fa-bars hamburger"></i></div>
       </div>
     </header>
   );

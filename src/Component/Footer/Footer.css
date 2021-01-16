@@ -229,8 +229,6 @@ footer {
 
   .linkna,
   .conna {
-    width: 120px;
-    height: 35px;
     padding: 0px;
   }
   .conna {
@@ -248,11 +246,18 @@ footer {
     display: none;
   }
   .link-display {
+    max-width: 100px;
     display: flex;
   }
   .link-toogle {
     display: block;
     color: #ffffff;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .linkcon {
+    padding-left: 0px;
   }
 }

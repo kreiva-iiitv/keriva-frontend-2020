@@ -1,41 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from 'react'
 import Footer from "../../Component/Footer";
 import Navigation from "../../Component/Navigation";
 import Timeline from '../../Component/Events/Timeline/Timeline'
 import EventHeader from "../../Component/Events/EventHeader/EventHeader";
 
 
-class TimelineIndex extends React.Component{
+const TimelineIndex = () => {
 
-	state={
-		events: "",
-	}
+	const [events, setEvents] = useState([]);
+	const [isLoading, setIsLoading] = useState(false);
 
-
-	async componentDidMount(){
-		try{
-			const response = await fetch(`https://gaurkrishna.pythonanywhere.com/event/`);
-			const responseJSON = await response.json();
-			// console.log(responseJSON);
-			this.setState({events: responseJSON.Events})
-		}catch(error){
-			console.log(error);
+	useEffect(() => {
+		async function fetchAPI() {
+			setIsLoading(true);
+			const res = await fetch('https://gaurkrishna.pythonanywhere.com/event/');
+			const data = await res.json()
+			setEvents(data.Events);
+			setIsLoading(false);
 		}
+		fetchAPI()
+	}, [])
 
-
-	}
-
-	render(){
-		console.log(this.state);
-		return(
-	    <React.Fragment>
-	      <Navigation />
-	      <EventHeader timeline={true}/>
-	      <Timeline events={this.state.events}/>
-	      <Footer />
-	    </React.Fragment>
-		);
-	}
+	return (
+		<React.Fragment>
+			<Navigation />
+			<EventHeader timeline={true} />
+			{
+				isLoading ?
+					<div className="CardContainer">
+						<div className="lds-facebook">
+							<div></div><div></div><div></div>
+						</div>
+					</div> :
+					<Timeline events={events} />
+			}
+			<Footer />
+		</React.Fragment>
+	);
 }
 
 export default TimelineIndex;
