@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import TimelineCard from '../TimelineCard/TimelineCard';
 import './Timeline.css';
-import events from './event-details.json';
 import Fade from 'react-reveal/Fade'
 
 const Timeline = (props) => {
@@ -13,7 +12,6 @@ const Timeline = (props) => {
 	}
 
 	const parseDate = (date) => `${date[5]}${date[6]} Feb 2021`;
-
 	const parseTime = (time) => {
 		let period = `AM`;
 		let hours = Number(`${time[11]}${time[12]}`);
@@ -44,8 +42,7 @@ const Timeline = (props) => {
 						index={i}
 						onCardMouseEvent={onCardMouseEvent}
 					/>
-
-					{i < events.events.length - 1 ? (<hr className="timeline__hr" />) : null}
+					{i < props.events.length - 1 ? (<hr className="timeline__hr" />) : null}
 				</div></Fade>
 			} else {
 				return <Fade right><div className="timeline__card">
@@ -60,8 +57,7 @@ const Timeline = (props) => {
 						index={i}
 						onCardMouseEvent={onCardMouseEvent}
 					/>
-
-					{i < events.events.length - 1 ? (<hr className="timeline__hr" />) : null}
+					{i < props.events.length - 1 ? (<hr className="timeline__hr" />) : null}
 				</div></Fade>
 			}
 		})) : undefined;
