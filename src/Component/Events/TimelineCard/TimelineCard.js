@@ -37,7 +37,7 @@ const TimelineCard = (props)=>{
 						</div>
 						<div className="timeline-card__details__prize">
 							<span>Prize Worth</span>
-							<span className="timeline-card__details__prize__worth">{props.prize} INR</span>
+							<span className="timeline-card__details__prize__worth">{props.prize>0?`${props.prize} INR`: `None`}</span>
 						</div>
 					</div>
 				</div>

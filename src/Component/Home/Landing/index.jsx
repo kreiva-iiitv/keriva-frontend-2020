@@ -16,7 +16,7 @@ class Landing extends Component {
               KREIVA
             </div>
             <div className="landing__text--font landing__text--sub-section">
-              2020
+              2021
             </div>
             <div className="landing__text--font landing__text--virtual">
               A Virtual Fest
