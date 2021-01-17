@@ -33,7 +33,6 @@ const Footer = () => {
     <footer>
       <div className="inname">
         <div>
-          <img src={inslogo} alt="iiitv-logo" className="inslog"></img>
         </div>
         <div className="iiitv-name">
           Indian Institute of Information Technology Vadodara
