@@ -11,7 +11,7 @@ const event = (props) => {
 				</div>
 				<div className={props.index === props.slide ? "text" : "textSmall"}>
 					<div className={props.index === props.slide ? "title" : "titleSmall"}>{props.title}</div>
-					<div className={props.index === props.slide ? "prize" : "prizeSmall"}>{`Prizes worth ${props.prize}k`}</div>
+					<div className={props.index === props.slide ? "prize" : "prizeSmall"}>{`Prizes worth ${props.prize/1000}k`}</div>
 				</div>
 			</div>
 
@@ -21,7 +21,7 @@ const event = (props) => {
 				</div>
 				<div className="text--mobile">
 					<div className="title--mobile">{props.title}</div>
-					<div className="prize--mobile">{`Prizes worth ${props.prize}k`}</div>
+					<div className="prize--mobile">{`Prizes worth ${props.prize/1000}k`}</div>
 				</div>
 			</div>
 		</Slide>

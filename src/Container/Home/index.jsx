@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(()=>{
    async function fetchAPI() {
-    const res = await fetch('https://gaurkrishna.pythonanywhere.com/event/');
+    const res = await fetch('http://kreiva.tk/event/');
     const data = await res.json();
     setEvents(data.Events);
    } 

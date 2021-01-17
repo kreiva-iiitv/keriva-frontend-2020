@@ -65,6 +65,12 @@
   }
 }
 
+@media screen and (max-width: 970px) and (min-width: 800px){
+  .landing__text--virtual{
+      transform: translateY(-110%);
+  }
+}
+
 @media screen and (max-width: 800px) {
   .landing {
     margin-top: 68px;

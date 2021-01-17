@@ -6,17 +6,16 @@ function About() {
       <div className="About__text">
         <div className="About__text--heading About__font">ABOUT</div>
         <div className="About__text--content About__font">
-          Kreiva is the Annual Cultural Festival of IIIT Vadodara tentative test
-          dates are as follows : <br /> 28th - 29th October <br />
-          This page is handled by the students of the cultural committee of the
-          institute. <br />Kreiva - the IIIT Vadodara's Annual Cultural Festival is a
-          Platform to showcase the best in us and to strive for more. The Fest
-          was started in the year 2016 on an Intra-college level which in itself
-          was a quite success. The fest is basically a platform for students to
-          express their feelings and opinions through art, music, dance, drama,
-          in short, the mediums that connect with masses. Come; Let's Celebrate
-          this feeling of togetherness on public stage!!<br /> !! Welcome to Kreiva,
-          IIIT Vadodara !!
+            Kreiva is the annual cultural festival of Indian Institute of Information Technology, Vadodara. 
+            Kreiva serves as a platform for students to show their talents in performing arts and aesthetic arts, 
+            where students can collaborate and team up with other students to bring out the best in them.
+            <br/><br/>
+            The Annual Cultural Festival of IIIT Vadodara gets its name from the Esperanto word "Kreiva", 
+            meaning "Creativity". Since its inception in 2016 as an intra-institute fest in 2016, 
+            it has consistently been a huge platform for individuals to showcase their talents. 
+            A spectacular extravaganza, Kreiva is home to expression through art, music, drama, 
+            dance and culture. <br/><br/>
+            Join us to celebrate creativity, join us, to celebrate Kreiva!
         </div>
       </div>
       <div className="About__elements">
@@ -31,7 +30,7 @@ function About() {
           </div>
           <div className="About__elements--outer-ring About__elements--outer-ring--2">
             <div className="About__elements--inner-ring About__elements--inner-ring--2">
-              <span className="About__element--section About__font">20 +</span>
+              <span className="About__element--section About__font">12 +</span>
               <span className="About__element--subsection About__font">
                 Events to participate
               </span>
