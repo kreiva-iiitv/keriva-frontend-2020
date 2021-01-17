@@ -27,7 +27,7 @@ const Member = (props) => {
 					<hr className="member__card__hr" />
 
 					<div className="member__card__links">
-						<a href={props.linkedIn}><span className="fa fa-linkedin member__card__links__linkedin"></span></a>
+						<a href={props.linkedIn} target="_blank"><span className="fa fa-linkedin member__card__links__linkedin"></span></a>
 					</div>
 				</div>
 			</div>

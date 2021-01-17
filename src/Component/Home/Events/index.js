@@ -37,7 +37,7 @@ class Events extends React.Component {
 	}
 
 	render() {
-		const eventList = this.props.events.map((event, i) => <Event title={event.title} prize={event.prize} index={i} slide={this.state.currentSlide} />);
+		const eventList = this.props.events.map((event, i) => <Event title={event.name} prize={event.prize} index={i} slide={this.state.currentSlide} imgSrc={event.poster}/>);
 		return (
 			<div>
 				<div>
@@ -46,7 +46,7 @@ class Events extends React.Component {
 				<div className="CarouselParent">
 					<CarouselProvider
 						naturalSlideWidth={1}
-						naturalSlideHeight={1.2}
+						naturalSlideHeight={1.1}
 						totalSlides={this.props.events.length}
 						visibleSlides={3}
 						infinite={true}
@@ -60,6 +60,27 @@ class Events extends React.Component {
 								{eventList}
 							</Slider>
 							<ButtonNext className="nextButton" onClick={() => { this.changeCurrentSlideNext() }}></ButtonNext>
+						</div>
+					</CarouselProvider>
+				</div>
+
+				<div className="CarouselParent--mobile">
+					<CarouselProvider
+						naturalSlideWidth={1}
+						naturalSlideHeight={1.2}
+						totalSlides={this.props.events.length}
+						visibleSlides={1}
+						infinite={true}
+						dragEnabled={false}
+						touchEnabled={false}
+						className="Events--mobile"
+					>
+						<div className="CarouselChildren--mobile">
+							<ButtonBack className="backButton--mobile" onClick={() => { this.changeCurrentSlideBack() }}></ButtonBack>
+							<Slider className="Slider--mobile">
+								{eventList}
+							</Slider>
+							<ButtonNext className="nextButton--mobile" onClick={() => { this.changeCurrentSlideNext() }}></ButtonNext>
 						</div>
 					</CarouselProvider>
 				</div>

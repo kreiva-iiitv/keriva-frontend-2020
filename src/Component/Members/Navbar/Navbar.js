@@ -1,7 +1,6 @@
 import React from 'react';
 import './Navbar.css';
 
-
 const Navbar = (props) => {
 	// console.log(props)
 	const NavbarTabs = props.teamNames !== null ? props.teamNames.map((name, i) =>
