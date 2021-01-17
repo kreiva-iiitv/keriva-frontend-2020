@@ -21,11 +21,7 @@
 }
 
 .Close{
-<<<<<<< HEAD
-    transform: translateX(-120%);
-=======
     transform: translateX(-112%);
->>>>>>> 1694e09246886df9b1c93662ebad462076215456
 }
 
 .side__hamburger{
