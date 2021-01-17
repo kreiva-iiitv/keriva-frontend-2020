@@ -10,15 +10,17 @@ class Landing extends Component {
     return (
       <>
         <div className="landing">
-          <img src={wave} width="100%" height="100%" />
+          <img src={wave} width="100%" height="100%" alt="wave" />
           <div className={"landing__text"}>
             <div className="landing__text--font landing__text--section">
               KREIVA
             </div>
             <div className="landing__text--font landing__text--sub-section">
-              2020
+              2021
             </div>
-            <div></div>
+            <div className="landing__text--font landing__text--virtual">
+              A Virtual Fest
+          </div>
           </div>
         </div>
         <Handle />

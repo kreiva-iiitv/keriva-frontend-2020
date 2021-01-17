@@ -1,0 +1,167 @@
+.focusRing___1airF.carousel__slide-focus-ring {
+  outline: none !important;
+}
+
+.Event {
+  color: white;
+}
+
+.Event-section__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgDiv {
+  height: 25.41vw;
+  width: 22.63vw;
+  animation: enlarge 1s;
+}
+
+@keyframes enlarge {
+  0% {
+    height: 20.07vw;
+    width: 17.847vw;
+  }
+  100% {
+    height: 25.41vw;
+    width: 22.63vw;
+  }
+}
+
+
+
+.text {
+  text-align: center;
+  width: 22.63vw;
+  animation: enlargeText 1s;
+  background-color: #2a1f6f;
+  display: flex;
+  flex-direction: column;
+  gap: 0.277vw;
+  padding-top: 0.763vw;
+  padding-bottom: 0.55vw;
+}
+
+@keyframes enlargeText {
+  0% {
+    width: 17.847vw;
+    font-size: 1.04vw;
+  }
+  100% {
+    width: 22.63vw;
+    font-size: 1.18vw;
+  }
+}
+
+.title {
+  font-family: Manrope, serif;
+  font-weight: 500;
+  font-size: 1.18vw;
+  animation: title 1s;
+}
+
+@keyframes title {
+  0% {
+    font-size: 1.04vw;
+  }
+  100% {
+    font-size: 1.18vw;
+  }
+}
+
+.prize {
+  font-family: Manrope, serif;
+  font-weight: 300;
+  font-size: 0.9vw;
+  animation: prize 1s;
+}
+
+@keyframes prize {
+  0% {
+    font-size: 0.763vw;
+  }
+  100% {
+    font-size: 0.9vw;
+  }
+}
+
+.imgDivSmall {
+  height: 20.07vw;
+  width: 17.847vw;
+}
+
+.textSmall {
+  text-align: center;
+  width: 17.847vw;
+  font-size: 1.04vw;
+  background-color: #2a1f6f;
+  display: flex;
+  flex-direction: column;
+  gap: 0.138vw;
+  padding-top: 0.486vw;
+  padding-bottom: 0.347vw;
+}
+
+.titleSmall {
+  font-size: 1.18vw;
+}
+
+.prizeSmall {
+  font-size: 0.763vw;
+}
+
+
+@media(max-width: 600px){
+  .Event-section__card{
+    display: none;
+  }
+}
+
+
+.Event-section__card--mobile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgDiv--mobile{
+  height: 296px;
+  width: 264px;
+  /*animation: enlarge 1s;*/
+}
+
+
+.text--mobile{
+  text-align: center;
+  width: 264px;
+  /*animation: enlargeText 1s;*/
+  background-color: #2a1f6f;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+}
+
+.title--mobile{
+  font-family: Manrope, serif;
+  font-weight: 500;
+  font-size: 14px;
+  /*animation: title 1s;*/
+}
+
+.prize--mobile{
+  font-family: Manrope, serif;
+  font-weight: 300;
+  font-size: 12px;
+  /*animation: prize 1s;*/
+}
+
+@media (min-width:601px){
+  .Event-section__card--mobile{
+    display: none;
+  }
+}

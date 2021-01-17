@@ -1,17 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
-import "./Footer.css";
-
-// import images
-import inslogo from "../../Assets/Images/inslogo.png";
 import dotlogo from "../../Assets/Images/dot.png";
 import cclogo from "../../Assets/Images/inslogo.png";
+import inslogo from "../../Assets/Images/inslogo.png";
 
+//styles import
+import './Footer.css';
 
 const Footer = () => {
 
-  const link_toogle = () => {
+  const link_toogle = (e) => {
+    e.target.style.transform === 'rotate(180deg)' ? e.target.style.transform = 'rotate(0deg)' : e.target.style.transform = 'rotate(180deg)';
+
     var element = document.getElementById("cyka");
 
     if (element.classList) {
@@ -32,7 +33,6 @@ const Footer = () => {
     <footer>
       <div className="inname">
         <div>
-          <img src={inslogo} alt="iiitv-logo" className="inslog"></img>
         </div>
         <div className="iiitv-name">
           Indian Institute of Information Technology Vadodara
@@ -47,15 +47,15 @@ const Footer = () => {
               LINKS
               <hr className="underline"></hr>
             </div>
-            <div className="link-toogle" onClick={() => link_toogle()} >
+            <div className="link-toogle" onClick={(e) => link_toogle(e)} >
               <i className="fa fa-angle-down fa-2x" aria-hidden="true" color="white"></i>
             </div>
           </div>
           <div className="links" id="cyka">
-            <NavLink className="link" to="/">Home</NavLink>
-            <NavLink className="link" to="/events">Events</NavLink>
-            <NavLink className="link" to="/members">Members</NavLink>
-            <NavLink className="link" to="/">Institue Site</NavLink>
+            <NavLink to="/" className="link">Home</NavLink>
+            <NavLink to="/events" className="link">Events</NavLink>
+            <NavLink to="/members" className="link">Members</NavLink>
+            <a href="http://iiitvadodara.ac.in/" className="link">Institute Site</a>
           </div>
         </div>
 
@@ -65,14 +65,14 @@ const Footer = () => {
           <hr className="underline"></hr>
           </div>
           <div className="contact">
-            <div className="clink">Email: <div className="con-details">cerebro@iiitvadodara.ac.in</div></div>
-            <div className="clink">Phone: <div className="con-details">+915525252536  +91242526252652  +9135252252255</div></div>
-            <div className="clink">Address: <div className="con-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div></div>
+            <div className="clink">Email: <div className="con-details">cultural_sec@iiitvadodara.ac.in</div></div>
+            <div className="clink">Phone: <div className="con-details">+91 7821905696  +91 8209270352  +91 9009429181</div></div>
+            <div className="clink">Address: <div className="con-details">c/o Block No.9, Government Engineering College Campus, Sector-28, Gandhinagar, Gujarat - 382028</div></div>
           </div>
         </div>
       </div>
-
       <hr className="lastline"></hr>
+
       <div className="dev">
         <div className="dot">
           <p className="p-dev">Designed by Dot</p>
