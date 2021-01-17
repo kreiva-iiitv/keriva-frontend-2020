@@ -1,53 +1,56 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Member from '../../Component/Members/Member/Member';
 import Navbar from '../../Component/Members/Navbar/Navbar';
 import './Members.css';
 import Footer from "../../Component/Footer";
 import Header from "../../Component/Header";
 
-class Members extends React.Component{
+const Members = () => {
 
-	state={
-		teams: "",
-		currentTab: 0,
-	};
+	const [teams, setTeams] = useState("");
+	const [currentTab, setCurrentTab] = useState(0);
+	const [isLoading, setIsLoading] = useState(false);
 
-
-	changeCurrentTab = (tab)=>{
-		this.setState({currentTab: tab});
+	const changeCurrentTab = (tab) => {
+		setCurrentTab(tab);
 	}
 
-
-	async componentDidMount(){
-		try{
-			const response = await fetch(`https://gaurkrishna.pythonanywhere.com/team/`);
-			const responseJSON = await response.json();
-			this.setState({teams: responseJSON.Team});
-		}catch(error){
-			console.log(error);
+	useEffect(() => {
+		async function fetchAPI() {
+			setIsLoading(true);
+			const res = await fetch('https://gaurkrishna.pythonanywhere.com/team/');
+			const data = await res.json()
+			setTeams(data.Team);
+			setIsLoading(false);
+			console.log(data.Team)
 		}
-	}
+		fetchAPI()
+	}, [])
 
-	render(){
-		console.log(this.state.teams);
-		const a =[1,2,3,4,5,6,7];
-		const teamNames = this.state.teams!==""?this.state.teams.map((team)=>team.name):null;
-		const CurrentTabMembers = this.state.teams!==""?this.state.teams[this.state.currentTab].teamMembers.map(
-									(member)=><Member imgSrc={member.profilepic}
-													  name = {`${member.first_name} ${member.last_name}`}
-													  position = {member.role}
-													  linkedIn = {member.linkedIn}/>):null;
-		return(
-			<React.Fragment>
-				<Header/>
-				<Navbar teamNames={teamNames} currentTab = {this.state.currentTab} changeCurrentTab = {this.changeCurrentTab}/>
-				<div className="members">
-					{CurrentTabMembers}
-				</div>
-				<Footer/>
-			</React.Fragment>
-			)
-	}
+	const teamNames = teams !== "" ? teams.map((team) => team.name) : null;
+
+	const CurrentTabMembers = teams !== "" ? teams[currentTab].teamMembers.map(
+		(member) => <Member imgSrc={member.profilepic}
+			name={`${member.first_name} ${member.last_name}`}
+			position={member.role}
+			linkedIn={member.linkedIn} />) : null;
+
+	return (
+		<React.Fragment>
+			<Header />
+			<Navbar teamNames={teamNames} currentTab={currentTab} changeCurrentTab={changeCurrentTab} />
+			<div className="members">
+				{
+					isLoading ?
+						<div className="lds-facebook">
+							<div></div><div></div><div></div>
+						</div>
+						: CurrentTabMembers
+				}
+			</div>
+			<Footer />
+		</React.Fragment>
+	)
 }
 
 export default Members;
