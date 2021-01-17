@@ -24,20 +24,20 @@ function Gallery() {
           <Slider>
             <Slide index={0}>
               <div className="largeImg">
-                <img src="https://gaurkrishna.pythonanywhere.com/media/gallery/img1.jpg" alt="kreiva gallery" draggable="false" />
+                <img className="galleryImg" src="https://gaurkrishna.pythonanywhere.com/media/gallery/img1.jpg" alt="kreiva gallery" draggable="false" />
               </div>
             </Slide>
             <Slide index={1}>
               <div className="midContainer">
                 <div className="upper">
-                  <img src="https://gaurkrishna.pythonanywhere.com/media/gallery/img2.jpg" alt="kreiva gallery" draggable="false" />
+                  <img className="galleryImg" src="https://gaurkrishna.pythonanywhere.com/media/gallery/img2.jpg" alt="kreiva gallery" draggable="false" />
                 </div>
                 <div className="subContainer">
                   <div className="lower1">
-                    <img src="https://gaurkrishna.pythonanywhere.com/media/gallery/img3.jpg" alt="kreiva gallery" draggable="false" />
+                    <img className="galleryImg" src="https://gaurkrishna.pythonanywhere.com/media/gallery/img3.jpg" alt="kreiva gallery" draggable="false" />
                   </div>
                   <div className="lower1">
-                    <img src="https://gaurkrishna.pythonanywhere.com/media/gallery/img4.jpg" alt="kreiva gallery" draggable="false" />
+                    <img className="galleryImg" src="https://gaurkrishna.pythonanywhere.com/media/gallery/img4.jpg" alt="kreiva gallery" draggable="false" />
                   </div>
 
                 </div>
@@ -45,40 +45,40 @@ function Gallery() {
             </Slide>
             <Slide index={2}>
               <div className="largeImg">
-                <img src="https://gaurkrishna.pythonanywhere.com/media/gallery/img5.jpg" alt="kreiva gallery" draggable="false" />
+                <img className="galleryImg" src="https://gaurkrishna.pythonanywhere.com/media/gallery/img5.jpg" alt="kreiva gallery" draggable="false" />
               </div>
             </Slide>
             <Slide index={3}>
               <div className="midContainer">
                 <div className="upper">
-                  <img src="https://gaurkrishna.pythonanywhere.com/media/gallery/img6.jpg" alt="kreiva gallery" draggable="false" />
+                  <img className="galleryImg" src="https://gaurkrishna.pythonanywhere.com/media/gallery/img6.jpg" alt="kreiva gallery" draggable="false" />
                 </div>
                 <div className="subContainer">
                   <div className="lower1">
-                    <img src="https://gaurkrishna.pythonanywhere.com/media/gallery/img7.jpg" alt="kreiva gallery" draggable="false" />
+                    <img className="galleryImg" src="https://gaurkrishna.pythonanywhere.com/media/gallery/img7.jpg" alt="kreiva gallery" draggable="false" />
                   </div>
                   <div className="lower1">
-                    <img src="https://gaurkrishna.pythonanywhere.com/media/gallery/img8.jpg" alt="kreiva gallery" draggable="false" />
+                    <img className="galleryImg" src="https://gaurkrishna.pythonanywhere.com/media/gallery/img8.jpg" alt="kreiva gallery" draggable="false" />
                   </div>
                 </div>
               </div>
             </Slide>
             <Slide index={4}>
               <div className="largeImg">
-                <img src="https://gaurkrishna.pythonanywhere.com/media/gallery/img9.jpg" alt="kreiva gallery" draggable="false" />
+                <img className="galleryImg" src="https://gaurkrishna.pythonanywhere.com/media/gallery/img9.jpg" alt="kreiva gallery" draggable="false" />
               </div>
             </Slide>
             <Slide index={5}>
               <div className="midContainer">
                 <div className="upper">
-                  <img src="https://gaurkrishna.pythonanywhere.com/media/gallery/img10.jpg" alt="kreiva gallery" draggable="false" />
+                  <img className="galleryImg" src="https://gaurkrishna.pythonanywhere.com/media/gallery/img10.jpg" alt="kreiva gallery" draggable="false" />
                 </div>
                 <div className="subContainer">
                   <div className="lower1">
-                    <img src="https://gaurkrishna.pythonanywhere.com/media/gallery/img11.jpg" alt="kreiva gallery" draggable="false" />
+                    <img className="galleryImg" src="https://gaurkrishna.pythonanywhere.com/media/gallery/img11.jpg" alt="kreiva gallery" draggable="false" />
                   </div>
                   <div className="lower1">
-                    <img src="https://gaurkrishna.pythonanywhere.com/media/gallery/img12.jpg" alt="kreiva gallery" draggable="false" />
+                    <img className="galleryImg" src="https://gaurkrishna.pythonanywhere.com/media/gallery/img12.jpg" alt="kreiva gallery" draggable="false" />
                   </div>
                 </div>
               </div>

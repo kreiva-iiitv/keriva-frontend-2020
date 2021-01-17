@@ -144,6 +144,9 @@
   padding: 0 20px;
 }
 
+.galleryImg{
+  object-fit: cover;
+}
 
 
 .mobileGallery__container{
@@ -153,20 +156,22 @@
 .prevMobile{
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 10px;
   background: transparent;
   color: #821169;
   border: 0px;
   outline: none;
+  font-size: large;
 }
 .nextMobile{
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 10px;
   background: transparent;
   color: #821169;
   border: 0px;
   outline: none;
+  font-size: large;
 }
 
 @media only screen and (max-width:600px){
