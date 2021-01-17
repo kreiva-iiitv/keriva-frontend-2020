@@ -6,9 +6,8 @@
   flex-wrap: wrap;
   column-gap: 224px;
   row-gap: 84px;
-  justify-content: center;
   transition: all 0.3s ease;
-  margin: 41.6px auto 84px auto;
+  margin: 40px auto 84px;
 }
 
 @media (max-width: 1280px) and (min-width: 1080px) {
