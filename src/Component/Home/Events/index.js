@@ -41,12 +41,12 @@ class Events extends React.Component {
 		return (
 			<div>
 				<div>
-					<h1 className="EventsHead">Events</h1>
+					<div className="EventsHead">Events</div>
 				</div>
 				<div className="CarouselParent">
 					<CarouselProvider
 						naturalSlideWidth={1}
-						naturalSlideHeight={1.1}
+						naturalSlideHeight={1.2}
 						totalSlides={this.props.events.length}
 						visibleSlides={3}
 						infinite={true}

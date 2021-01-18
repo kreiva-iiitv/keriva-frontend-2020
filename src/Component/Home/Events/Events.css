@@ -1,15 +1,13 @@
 .EventsHead {
-  text-align: center;
-  width: 6em;
   color: white;
-  font-family: Manrope, sans-serif;
+  font-family: Manrope, "Segoe UI";
+  font-size: 22px;
   font-weight: 600;
-  font-size: 1.375em;
   text-transform: uppercase;
-  box-sizing: border-box;
-  margin-left: 10vw;
-  padding: 0.4em 0.6em;
-  border-bottom: 0.19em solid #821169;
+  padding: 10px 20px;
+  width: max-content;
+  border-bottom: 4px solid #760e61;
+  margin-left: 45px;
 }
 
 .CarouselParent {
@@ -48,6 +46,20 @@
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   outline: none;
+}
+
+@media(max-width: 768px){
+  .EventsHead{
+    margin-left: 22.743vw;
+    font-size: 20px;
+  }
+
+}
+
+@media(max-width: 500px){
+  .EventsHead{
+    margin-left: 10px;
+  }
 }
 
 @media(max-width: 600px){
