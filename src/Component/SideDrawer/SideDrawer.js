@@ -1,21 +1,29 @@
 import React from "react";
 import "./SideDrawer.css";
 import "font-awesome/css/font-awesome.min.css";
+import { NavLink } from "react-router-dom";
 
 const SideDrawer = (props) => {
 
   return (
-    <div>
       <div className={"SideDrawer " + (props.open ? 'Open' : 'Close')}>
         <div onClick={props.closed}>
           <i className="fa fa-bars side__hamburger" onClick={props.opened}></i>
         </div>
 
         <div className="side__tabs">
-          <div className="side__tab side__active">HOME</div>
-          <div className="side__tab">EVENTS</div>
-          <div className="side__tab">MEMBERS</div>
-          <div className="side__tab">BROCHURE</div>
+          <div className="side__tab " >
+            <NavLink onClick={props.closed} exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/'>HOME</NavLink>
+          </div>
+          <div className="side__tab">
+            <NavLink onClick={props.closed} exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/events'>EVENTS</NavLink>
+          </div>
+          <div className="side__tab">
+            <NavLink onClick={props.closed} exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/members'>MEMBERS</NavLink>
+          </div>
+          <div className="side__tab">
+            <NavLink onClick={props.closed} exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/brochure'>BROCHURE</NavLink>
+          </div>
         </div>
 
         <div className="side__handles">
@@ -34,7 +42,6 @@ const SideDrawer = (props) => {
         </div>
 
       </div>
-    </div>
 
   );
 };

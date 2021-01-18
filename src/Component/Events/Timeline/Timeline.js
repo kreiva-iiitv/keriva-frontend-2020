@@ -11,7 +11,7 @@ const Timeline = (props) => {
 		setCurrentSlide(slideIndex);
 	}
 
-	const parseDate = (date) => `${date[5]}${date[6]} Feb 2021`;
+	const parseDate = (date) => `${date[8]}${date[9]} Feb 2021`;
 	const parseTime = (time) => {
 		let period = `AM`;
 		let hours = Number(`${time[11]}${time[12]}`);

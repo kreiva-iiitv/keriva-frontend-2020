@@ -6,6 +6,12 @@
   color: white;
 }
 
+.Event>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Event-section__card{
   display: flex;
   flex-direction: column;
@@ -116,6 +122,10 @@
 @media(max-width: 600px){
   .Event-section__card{
     display: none;
+  }
+
+  .Event>div{
+    display: block;
   }
 }
 

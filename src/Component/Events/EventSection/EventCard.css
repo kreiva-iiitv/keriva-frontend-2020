@@ -186,13 +186,12 @@
 
 @media only screen and (max-width:600px){
     .EventCard{
-        height: 744px;
+        height: auto;
         flex-flow: column;
-        /* width: 70%; */
     }
 
     .EventCard__image{
-        height: 295px;
+        height: auto;
         width: 100%;
     }
 
