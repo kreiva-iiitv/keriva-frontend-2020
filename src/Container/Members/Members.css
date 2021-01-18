@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   column-gap: 224px;
   row-gap: 84px;
+  justify-content: center;
   transition: all 0.3s ease;
   margin: 40px auto 84px;
 }

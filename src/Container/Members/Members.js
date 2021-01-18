@@ -39,7 +39,7 @@ const Members = () => {
 		<React.Fragment>
 			<Header />
 			<Navbar teamNames={teamNames} currentTab={currentTab} changeCurrentTab={changeCurrentTab} />
-			<div className="members" style={{justifyContent:teams[currentTab].teamMembers.length>2?'center':'unset'}}>
+			<div className="members">
 				{
 					isLoading ?
 						<div className="lds-facebook">
