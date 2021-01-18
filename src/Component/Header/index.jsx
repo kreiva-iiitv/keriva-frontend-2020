@@ -8,26 +8,34 @@ function Header({ opened }) {
   return (
     <header>
       <div className="tabs">
-        <div className="tabs__logo__tab active">
-          <NavLink to="/">HOME</NavLink>
-        </div>
+        <NavLink style={{display:'flex',color:'white',textDecoration:'none'}} to="/">
+          <div className="tabs__logo__tab active">
+            HOME
+          </div>
+        </NavLink>
 
-        <div className="tabs__logo__tab ">
-          <NavLink to="/events">EVENTS</NavLink>
-        </div>
+        <NavLink style={{display:'flex',color:'white',textDecoration:'none'}} to="/events">
+          <div className="tabs__logo__tab ">
+            EVENTS
+          </div>
+        </NavLink>
 
         <div>
           <img className="tabs__logo" src={logo} alt="dates" />
           <p className="tabs__logo--date">31st Jan 2021 - 14th Feb 2021</p>
         </div>
 
-        <div className="tabs__logo__tab">
-          <NavLink to="/members">MEMBERS</NavLink>
-        </div>
+        <NavLink style={{display:'flex',color:'white',textDecoration:'none'}} to="/members">
+          <div className="tabs__logo__tab ">
+            MEMBERS
+          </div>
+        </NavLink>
 
-        <div className="tabs__logo__tab">
-          <NavLink to="/brochure">BROCHURE</NavLink>
-        </div>
+        <NavLink style={{display:'flex',color:'white',textDecoration:'none'}} to="/brochure">
+          <div className="tabs__logo__tab ">
+            BROCHURE
+          </div>
+        </NavLink>
       </div>
 
 
