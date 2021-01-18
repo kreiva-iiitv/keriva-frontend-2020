@@ -40,7 +40,7 @@ function About() {
         <div>
           <div className="About__elements--outer-ring About__elements--outer-ring--3">
             <div className="About__elements--inner-ring About__elements--inner-ring--3">
-              <span className="About__element--section About__font">14 D+</span>
+              <span className="About__element--section About__font">10 D+</span>
               <span className="About__element--subsection About__font">
                 long fest to participate
               </span>

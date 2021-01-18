@@ -33,13 +33,13 @@ const Members = () => {
 		(member) => <Member imgSrc={member.profilepic}
 			name={`${member.first_name} ${member.last_name}`}
 			position={member.role}
-			linkedIn={member.linkedIn} />) : null;
+			linkedIn={member.linkedIn} />) : [];
 
 	return (
 		<React.Fragment>
 			<Header />
 			<Navbar teamNames={teamNames} currentTab={currentTab} changeCurrentTab={changeCurrentTab} />
-			<div className="members">
+			<div className="members" style={{justifyContent:CurrentTabMembers.length>2?'center':'unset'}}>
 				{
 					isLoading ?
 						<div className="lds-facebook">
