@@ -1,0 +1,229 @@
+.About__root {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 65px;
+  justify-content: space-between;
+  margin-top: 175px;
+}
+
+.About__text {
+  max-width: 50%;
+}
+
+.About__text--heading {
+  font-family: Manrope, "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px 20px;
+  width: max-content;
+  border-bottom: 4px solid #760e61;
+  margin-left: -20px;
+}
+
+.About__text--content {
+  font-family: Manrope, "Segoe UI";
+  font-size: 16px;
+  margin-top: 52px;
+}
+
+.About__font {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.About__elements {
+  max-width: 50%;
+}
+
+.About__elements--outer-ring {
+  position: relative;
+  border: solid 2px rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.About__elements--inner-ring {
+  border: solid 2px #821169;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.About__elements--outer-ring--1 {
+  width: 274px;
+  height: 274px;
+}
+.About__elements--outer-ring--2 {
+  width: 302px;
+  height: 302px;
+  margin-left: 55px;
+  transform: translateY(50%);
+}
+.About__elements--outer-ring--3 {
+  top: 33px;
+  width: 358px;
+  height: 358px;
+}
+.About__elements--inner-ring--1 {
+  width: 194px;
+  height: 194px;
+}
+.About__elements--inner-ring--2 {
+  width: 220px;
+  height: 220px;
+}
+.About__elements--inner-ring--3 {
+  width: 282px;
+  height: 282px;
+}
+
+.About__element--section {
+  display: block;
+  font-family: Noir-Noir, "Segoe UI";
+  font-size: 48px;
+}
+.About__element--subsection {
+  font-family: Noir-, "Segoe UI";
+  font-size: 18px;
+}
+
+/* For screen below 1280 */
+
+@media screen and (max-width: 1300px) {
+  .About__elements--outer-ring--1 {
+    width: 190px;
+    height: 190px;
+  }
+  .About__elements--outer-ring--2 {
+    width: 232px;
+    height: 232px;
+    margin-left: 35px;
+    transform: translateY(40%);
+  }
+  .About__elements--outer-ring--3 {
+    width: 280px;
+    height: 280px;
+  }
+  .About__elements--inner-ring--1 {
+    width: 144px;
+    height: 144px;
+  }
+  .About__elements--inner-ring--2 {
+    width: 170px;
+    height: 170px;
+  }
+  .About__elements--inner-ring--3 {
+    width: 232px;
+    height: 232px;
+  }
+
+  .About__element--section {
+    font-size: 32px;
+  }
+  .About__element--subsection {
+    font-size: 12px;
+  }
+}
+
+/* For screen below 1080 */
+
+@media screen and (max-width: 1080px) {
+  .About__elements--outer-ring--1 {
+    width: 152px;
+    height: 152px;
+  }
+  .About__elements--outer-ring--2 {
+    width: 165px;
+    height: 165px;
+    margin-left: 26px;
+  }
+  .About__elements--outer-ring--3 {
+    width: 192px;
+    height: 191px;
+  }
+  .About__elements--inner-ring--1 {
+    width: 113.2px;
+    height: 113.2px;
+  }
+  .About__elements--inner-ring--2 {
+    width: 125.6px;
+    height: 125.6px;
+  }
+  .About__elements--inner-ring--3 {
+    width: 155.4px;
+    height: 155.4px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .About__root {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 66.6px;
+  }
+
+  .About__text {
+    max-width: 100%;
+  }
+
+  .About__text--heading {
+    font-size: 20px;
+  }
+
+  .About__elements {
+    max-width: 100%;
+    margin-top: 24px;
+  }
+
+  .About__elements--outer-ring--1 {
+    width: 132px;
+    height: 132px;
+  }
+  .About__elements--outer-ring--2 {
+    width: 145px;
+    height: 145px;
+    margin-left: 26px;
+  }
+  .About__elements--outer-ring--3 {
+    top: 0;
+    margin-top: 16px;
+    width: 172px;
+    height: 171px;
+  }
+  .About__elements--inner-ring--1 {
+    width: 93.2px;
+    height: 93.2px;
+  }
+  .About__elements--inner-ring--2 {
+    width: 105.6px;
+    height: 105.6px;
+  }
+  .About__elements--inner-ring--3 {
+    width: 135.4px;
+    height: 135.4px;
+  }
+
+  .About__element--section {
+    font-size: 22px;
+  }
+  .About__element--subsection {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .About__root {
+    width: auto;
+  }
+}

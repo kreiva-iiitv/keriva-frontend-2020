@@ -1,0 +1,302 @@
+.EventCard{
+    /* width: 80%; */
+    height: auto;
+    display: flex;
+    margin: 50px 0;
+}
+
+.EventCard__image{
+    width: 40%;
+    background-color: #37053b;
+}
+
+.imageEvent{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.EventCard__profile{
+    width: 60%;
+    display: block;
+    box-sizing: border-box;
+    padding: 30px 34px;
+    background: linear-gradient(to right,#471259,#2a1f6f);
+}
+
+.EventCard__profile__head{
+    font-size: 48px;
+    font-weight: 500;
+    padding:10px 0;
+    color: white;
+    margin: 0;
+}
+
+.EventCard__profile__para{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+.EventCard__profile__container{
+    display: flex;
+    width: 100%;
+}
+
+.EventCard__profile__container__table{
+    width: 75%;
+}
+
+.EventCard__profile__container__table__head{
+    text-align: left;
+    width: 45%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.EventCard__profile__container__table__desc{
+    color: white;
+}
+
+.EventCard__profile__container__right{
+    width: 25%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 20px 0 10px 0;
+
+}
+
+.EventCard__profile__container__right__social{
+    width: 80%;
+    font-size: 34px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid white;
+}
+.EventCard__profile__container__right__social__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.EventCard__profile__container__right__register{
+    background-image: linear-gradient(to left, #d03893,#550962);
+    width: 186px;
+    height: 42px;
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    padding-left: 1.5px;
+    cursor: pointer;
+}
+
+.EventCard__profile__container__right__register__button{
+    background: #2a1f6f;
+    width: 98%;
+    height: 93%;
+    border-radius: 25px;
+    border: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.EventCard__profile__container__right__register__button:hover{
+    background: transparent;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.onlyMobile{
+    display: none;
+}
+
+@media only screen and (max-width:1340px){
+    .EventCard__profile__head{
+        font-size: 35px;
+        padding:10px 0;
+    }
+    .EventCard__profile{
+        padding: 15px 17px;
+    }
+    .EventCard__profile__container__table__head{
+        padding: 7px 0;
+        font-size: 15px;
+    }
+    .EventCard__profile__para{
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    .EventCard__profile__container__right{
+        justify-content: space-around;
+    }
+    .EventCard__profile__container__right__social{
+        width: 80%;
+        font-size: 25px;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .EventCard__profile{
+        padding: 10px 13px;
+    }
+    .EventCard__profile__head{
+        font-size: 30px;
+        padding:5px 0;
+    }
+    .EventCard__profile__para{
+        margin-bottom: 0px;
+        font-size: 13px;
+    }
+    .EventCard__profile__container__table__head{
+        padding: 5px 0;
+        font-size: 14px;
+    }
+    .EventCard__profile__container__right__register{
+        width: 130px;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    .EventCard{
+        height: 744px;
+        flex-flow: column;
+        /* width: 70%; */
+    }
+
+    .EventCard__image{
+        height: 295px;
+        width: 100%;
+    }
+
+    .EventCard__profile{
+        height: 263px;
+        width: 100%;
+        
+        overflow-y: scroll;
+        padding: 16px 20px;
+        margin: 0;
+        
+    }
+
+    .EventCard__profile::-webkit-scrollbar{
+        width: 10px;
+    }
+    .EventCard__profile::-webkit-scrollbar-thumb {
+        background: #821169; 
+        border-radius: 5px;
+        max-height: 47px;
+        height: 47px;
+    }
+
+    .EventCard__profile::-webkit-scrollbar-track {
+        border: 4px solid transparent;
+        background-clip: content-box; 
+    }
+
+    .EventCard__profile::-webkit-scrollbar-button {
+        height: 50px; 
+      }
+
+    .EventCard__profile__container__right{
+        display: none;
+    }
+
+    .EventCard__profile__head{
+        text-align: center;
+        padding: 5px 0;
+    }
+    .EventCard__profile__container__table{
+        width: 100%;
+        padding:10px 0;
+    }
+    .onlyMobile{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right,#471259,#2a1f6f);
+        height: 190px;
+        margin: 0;
+    }
+    .onlyMobile__hr{
+        width: 150px;
+        height: 0px;
+        border-top: 5px solid white;
+        border-radius: 6px;
+    }
+    .onlyMobile__social{
+        font-size: 34px;
+        width: 100%;
+    }
+    .onlyMobile__social__list{
+        list-style: none;
+        display: flex;
+        margin: 10px 0;
+        padding: 10px 16px;
+        justify-content: space-around;
+        color: white;
+    }
+    .onlyMobile__register{
+        background-image: linear-gradient(to left, #d03893,#550962);
+        width: 151px;
+        height: 48px;
+        border-radius: 25px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+        padding-left: 1.5px;
+        cursor: pointer;
+    }
+    .onlyMobile__register__button{
+        background: #2a1f6f;
+        width: 98%;
+        height: 93%;
+        border-radius: 25px;
+        border: transparent;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding-bottom: 5px;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    .onlyMobile__register__button:hover{
+        background: transparent;
+    }
+}

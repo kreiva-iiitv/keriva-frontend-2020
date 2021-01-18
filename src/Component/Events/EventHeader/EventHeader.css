@@ -1,0 +1,46 @@
+.EventHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.EventHeader__list{
+    width: 80%;
+    list-style: none;
+    color: white;
+    display: flex;
+}
+
+.EventHeader__list__link{
+    text-decoration: none;
+    color: white;
+}
+
+.EventHeader__list__item{
+    width: 150px;
+    height: 65px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.EventHeader__list__item:hover{
+    border-bottom: 3px solid #821169;
+    border-radius: 2px;
+}
+
+@media only screen and (max-width:600px){
+    .EventHeader__list__item{
+        width: 79px;
+        height:35px ;
+        font-size: 16px;
+    }
+}
+
