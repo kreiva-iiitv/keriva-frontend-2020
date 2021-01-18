@@ -11,7 +11,7 @@ const CardContainer = () => {
     useEffect(() => {
         async function fetchAPI() {
             setIsLoading(true);
-            const res = await fetch('https://gaurkrishna.pythonanywhere.com/event/');
+            const res = await fetch('https://kreiva.tk/event/');
             const data = await res.json()
             setEventData(data);
             setIsLoading(false);
@@ -19,7 +19,7 @@ const CardContainer = () => {
         fetchAPI()
     }, [])
 
-    const parseDate = (date) => `${date[5]}${date[6]} Feb 2021`;
+    const parseDate = (date) => `${date[8]}${date[9]} Feb 2021`;
 
     const parseTime = (time) => {
         let period = `AM`;
