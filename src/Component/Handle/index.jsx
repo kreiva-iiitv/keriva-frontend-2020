@@ -7,16 +7,13 @@ class Handle extends Component {
     return (
       <div className="social">
         <div>
-          <i className="fa fa-facebook-square s"></i>
+          <a href="https://www.facebook.com/kreiva.iiitv/" target="_blank"><i className="fa fa-facebook-square s"></i></a>
         </div>
         <div>
-          <i className="fa fa-instagram s"></i>
+          <a href="https://www.instagram.com/kreiva_cultural_fest/" target="_blank"><i className="fa fa-instagram s"></i></a>
         </div>
         <div>
-          <i className="fa fa-linkedin s"></i>
-        </div>
-        <div>
-          <i className="fa fa-twitter s"></i>
+          <a href="https://twitter.com/Kreiva_iiitv" target="_blank"><i className="fa fa-twitter s"></i></a>
         </div>
       </div>
     );

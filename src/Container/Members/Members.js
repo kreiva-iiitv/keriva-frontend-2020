@@ -3,7 +3,7 @@ import Member from '../../Component/Members/Member/Member';
 import Navbar from '../../Component/Members/Navbar/Navbar';
 import './Members.css';
 import Footer from "../../Component/Footer";
-import Header from "../../Component/Header";
+import Navigation from "../../Component/Navigation";
 
 const Members = () => {
 
@@ -33,11 +33,11 @@ const Members = () => {
 		(member) => <Member imgSrc={member.profilepic}
 			name={`${member.first_name} ${member.last_name}`}
 			position={member.role}
-			linkedIn={member.linkedIn} />) : null;
+			linkedIn={member.linkedIn} />) : [];
 
 	return (
 		<React.Fragment>
-			<Header />
+			<Navigation />
 			<Navbar teamNames={teamNames} currentTab={currentTab} changeCurrentTab={changeCurrentTab} />
 			<div className="members">
 				{

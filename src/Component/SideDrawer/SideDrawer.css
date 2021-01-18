@@ -39,9 +39,9 @@
 
 .side__tab{
     color: white;
-    font-family: Manrope-SemiBold;
+    font-family: Manrope;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     height: 24px;
     padding-left: 32px;
     padding-top: 9px;
@@ -64,6 +64,10 @@
     margin-right: 61px;
     color: white;
     margin-top: 90%;
+}
+
+.side__handles>div>a{
+    color: white;
 }
 
 .mobile__active{

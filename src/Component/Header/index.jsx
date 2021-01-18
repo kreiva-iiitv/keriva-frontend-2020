@@ -31,11 +31,11 @@ function Header({ opened }) {
           </div>
         </NavLink>
 
-        <NavLink style={{display:'flex',color:'white',textDecoration:'none'}} to="/brochure">
+        <a style={{display:'flex',color:'white',textDecoration:'none'}} href="https://kreiva.tk/media/brochure.pdf">
           <div className="tabs__logo__tab ">
             BROCHURE
           </div>
-        </NavLink>
+        </a>
       </div>
 
 

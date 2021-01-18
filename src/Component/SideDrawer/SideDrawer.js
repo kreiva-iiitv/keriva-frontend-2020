@@ -28,16 +28,13 @@ const SideDrawer = (props) => {
 
         <div className="side__handles">
           <div>
-            <i className="fa fa-facebook-square"></i>
+            <a href="https://www.facebook.com/kreiva.iiitv/" target="_blank"><i className="fa fa-facebook-square"></i></a>
           </div>
           <div>
-            <i className="fa fa-instagram"></i>
+            <a href="https://www.instagram.com/kreiva_cultural_fest/" target="_blank"><i className="fa fa-instagram"></i></a>
           </div>
           <div>
-            <i className="fa fa-linkedin"></i>
-          </div>
-          <div>
-            <i className="fa fa-twitter"></i>
+            <a href="https://twitter.com/Kreiva_iiitv" target="_blank"><i className="fa fa-twitter"></i></a>
           </div>
         </div>
 
