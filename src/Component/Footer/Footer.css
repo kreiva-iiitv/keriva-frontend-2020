@@ -151,7 +151,7 @@ footer {
 
 .link {
   text-decoration: none;
-  width: 80px;
+  width: max-content;
 }
 
 .link:hover {
@@ -216,7 +216,7 @@ footer {
     width: 100%;
     align-items: flex-start;
     padding-bottom: 0px;
-    padding-left: 55px;
+    margin-left: 15px;
   }
 
   .footerlin {
