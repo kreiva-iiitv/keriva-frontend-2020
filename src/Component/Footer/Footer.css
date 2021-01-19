@@ -151,7 +151,7 @@ footer {
 
 .link {
   text-decoration: none;
-  width: 80px;
+  width: max-content;
 }
 
 .link:hover {
@@ -163,9 +163,9 @@ footer {
   display: flex;
 }
 
-.link-toogle {
+/* .link-toogle {
   display: none;
-}
+} */
 /* --------------------------------------------- */
 
 @media only screen and (max-width: 800px) {
@@ -216,7 +216,7 @@ footer {
     width: 100%;
     align-items: flex-start;
     padding-bottom: 0px;
-    padding-left: 55px;
+    margin-left: 15px;
   }
 
   .footerlin {
@@ -242,18 +242,18 @@ footer {
     padding-top: 10px;
   }
 
-  .links {
+  /* .links {
     display: none;
-  }
+  } */
   .link-display {
     max-width: 100px;
     display: flex;
   }
-  .link-toogle {
+  /* .link-toogle {
     display: block;
     color: #ffffff;
     cursor: pointer;
-  }
+  } */
 }
 
 @media only screen and (max-width: 500px) {
