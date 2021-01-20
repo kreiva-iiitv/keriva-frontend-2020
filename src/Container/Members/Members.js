@@ -22,7 +22,8 @@ const Members = () => {
 			const data = await res.json()
 			setTeams(data.Team);
 			setIsLoading(false);
-			console.log(data.Team)
+			console.log(data.Team);
+			window.scroll(0,0);
 		}
 		fetchAPI()
 	}, [])

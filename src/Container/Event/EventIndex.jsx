@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CardContainer from "../../Component/Events/EventSection/CardContainer";
 import Footer from "../../Component/Footer";
 import Navigation from "../../Component/Navigation";
 import EventHeader from "../../Component/Events/EventHeader/EventHeader";
 
 const Event = () => {
+
+  	useEffect(() => window.scroll(0,0), [])
 
   return (
     <React.Fragment>

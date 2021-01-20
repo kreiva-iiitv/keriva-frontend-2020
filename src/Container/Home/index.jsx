@@ -15,6 +15,7 @@ const Home = () => {
     const res = await fetch('https://kreiva.tk/event/');
     const data = await res.json();
     setEvents(data.Events);
+    window.scroll(0,0);
    } 
    fetchAPI();
   },[]);

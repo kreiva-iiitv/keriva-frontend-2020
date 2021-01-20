@@ -17,6 +17,7 @@ const TimelineIndex = () => {
 			const data = await res.json()
 			setEvents(data.Events);
 			setIsLoading(false);
+			window.scroll(0,0);
 		}
 		fetchAPI()
 	}, [])
