@@ -45,11 +45,11 @@ const Footer = () => {
           <div className="link-drop">
             <div className="linkna">
               LINKS
-              <hr className="underline"></hr>
+              <div className="underline"></div>
             </div>
-            <div className="link-toogle" onClick={(e) => link_toogle(e)} >
+            {/* <div className="link-toogle" onClick={(e) => link_toogle(e)} >
               <i className="fa fa-angle-down fa-2x" aria-hidden="true" color="white"></i>
-            </div>
+            </div> */}
           </div>
           <div className="links" id="cyka">
             <NavLink to="/" className="link">Home</NavLink>
@@ -62,11 +62,11 @@ const Footer = () => {
         <div className="footerlin">
           <div className="conna">
             CONTACT
-          <hr className="underline"></hr>
+          <div className="underline"></div>
           </div>
           <div className="contact">
             <div className="clink">Email: <div className="con-details">cultural_sec@iiitvadodara.ac.in</div></div>
-            <div className="clink">Phone: <div className="con-details">+91 7821905696  +91 8209270352  +91 9009429181</div></div>
+            <div className="clink">Phone: <div className="con-details">+91-7821905696  +91-8209270352  +91-9009429181</div></div>
             <div className="clink">Address: <div className="con-details">c/o Block No.9, Government Engineering College Campus, Sector-28, Gandhinagar, Gujarat - 382028</div></div>
           </div>
         </div>
