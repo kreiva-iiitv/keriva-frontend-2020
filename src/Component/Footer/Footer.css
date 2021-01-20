@@ -166,6 +166,18 @@ footer {
 .link-toogle {
   display: none;
 }
+
+.disclaimer{
+  width: 93%;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 8px;
+  color: white;
+  margin: auto;
+  display: inline-flex;
+  justify-content: center;
+}
+
 /* --------------------------------------------- */
 
 @media only screen and (max-width: 800px) {
