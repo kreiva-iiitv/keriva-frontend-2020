@@ -63,7 +63,7 @@ function EventCard(props) {
                     <ul className="onlyMobile__social__list">
                         <li><a style={{ color: 'white' }} target="_blank" rel="noreferrer" href={props.insta}><i className="fa fa-instagram icon"></i></a></li>
                         <li><a style={{ color: 'white' }} target="_blank" rel="noreferrer" href={props.fb}><i className="fa fa-facebook-square icon"></i></a></li>
-                        <li><a style={{ color: 'white' }} target="_blank" rel="noreferrer" href={props.email}><i className="fa fa-envelope-square icon"></i></a></li>
+                        <li><a style={{ color: 'white' }} target="_blank" rel="noreferrer" href={`mailto: ${props.email}`}><i className="fa fa-envelope-square icon"></i></a></li>
                     </ul>
                 </div>
                 <div className="onlyMobile__register">

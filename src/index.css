@@ -17,3 +17,23 @@ code {
   font-family: "Noir";
   src: local("Noir"), url(./Assets/Fonts/Noir_medium.otf) format("truetype");
 }
+
+   body::-webkit-scrollbar{
+        width: 10px;
+    }
+    body::-webkit-scrollbar-thumb {
+        background: #821169; 
+        border-radius: 5px;
+        max-height: 47px;
+        height: 47px;
+    }
+
+    body::-webkit-scrollbar-track {
+        border: 4px solid transparent;
+        background-clip: content-box; 
+    }
+
+    body::-webkit-scrollbar-button {
+        /*height: 50px; */
+      }
+

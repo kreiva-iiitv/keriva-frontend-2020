@@ -22,9 +22,16 @@ const Members = () => {
 			const data = await res.json()
 			setTeams(data.Team);
 			setIsLoading(false);
-			console.log(data.Team)
+			console.log(data.Team);
+			/*------pre loading images------*/
+ 			data.Team.map((team)=>team.teamMembers.map((member)=>{
+				const img = new Image();
+				img.src = member.profilepic;
+				return img;
+			}));
 		}
-		fetchAPI()
+		fetchAPI();
+		window.scroll(0,0);
 	}, [])
 
 	const teamNames = teams !== "" ? teams.map((team) => team.name) : null;
