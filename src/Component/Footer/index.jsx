@@ -71,6 +71,16 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="disclaimer">
+        <span>
+            Disclaimer:
+        </span>
+        <span>
+          This website is built and  handled by the cultural committee of IIIT Vadodara.
+          All opinions shared through the post are that of the students of Cultural Committee 
+          and not that of IIIT Vadodara.
+        </span>
+      </div>
       <hr className="lastline"></hr>
 
       <div className="dev">
