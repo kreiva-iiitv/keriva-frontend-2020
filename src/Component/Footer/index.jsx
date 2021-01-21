@@ -2,8 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import dotlogo from "../../Assets/Images/dot.png";
-import cclogo from "../../Assets/Images/inslogo.png";
-import inslogo from "../../Assets/Images/inslogo.png";
+import cclogo from "../../Assets/Images/cclogo.png";
 
 //styles import
 import './Footer.css';
@@ -90,7 +89,7 @@ const Footer = () => {
         </div>
         <div className="cc">
           <p className="p-dev">Developed by Coding Club</p>
-          <img src={cclogo} alt="cc-logo" className="dotlogo"></img>
+          <img src={cclogo} alt="cc-logo" className="cclogo"></img>
         </div>
       </div>
     </footer>

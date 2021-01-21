@@ -138,6 +138,12 @@ footer {
   object-fit: contain;
 }
 
+.cclogo{
+  width: 25px;
+  height: 25px;
+  object-fit: contain;  
+}
+
 .conna,
 .linkna {
   padding-right: 2.5rem;

@@ -22,7 +22,7 @@ const SideDrawer = (props) => {
             <NavLink onClick={props.closed} exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/members'>MEMBERS</NavLink>
           </div>
           <div className="side__tab">
-            <NavLink onClick={props.closed} exact activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} to='/brochure'>BROCHURE</NavLink>
+            <a onClick={props.closed} activeClassName="mobile__active" style={{ textDecoration: 'none', color: 'white' }} href="https://kreiva.tk/media/brochure.pdf">BROCHURE</a>
           </div>
         </div>
 
