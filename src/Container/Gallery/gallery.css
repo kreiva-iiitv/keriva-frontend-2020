@@ -47,10 +47,10 @@
   font-weight: 600;
   font-size: 22px;
   text-transform: uppercase;
-  margin-left: 60px;
+  margin-left: 45px;
   padding: 5px 10px;
   border-bottom: 4px solid #821169;
-  margin-bottom: 64px;
+  margin-bottom: 84px;
 }
 
 .midContainer {
@@ -96,6 +96,12 @@
   margin-top: 0.2rem;
 }
 
+@media(max-width: 768px){
+  .EventsHead{
+    font-size: 20px;
+  }
+
+}
 
 
 .mobileGallery__container{
@@ -141,7 +147,7 @@
   position: relative;
   width: 90%;
   height: 250px;
-  padding: 0 20px;
+  padding: 0 17px;
 }
 
 .galleryImg{
