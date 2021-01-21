@@ -1,0 +1,87 @@
+.SideDrawer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 101;
+    background-color: #471259;
+    transition: transform 0.3s ease-out;
+}
+
+
+@media screen and (min-width: 800px) {
+    .SideDrawer {
+      display: none;
+    }
+}
+
+.Open{
+    transform: translateX(0);
+}
+
+.Close{
+    transform: translateX(-112%);
+}
+
+.side__hamburger{
+    position: fixed;
+    top:0;
+    right:0;
+    padding: 9px 14px;
+    margin-top: 18px;
+    margin-right: 2px;
+    color: white;
+    background-color: #471259;
+    z-index: 10;
+}
+
+
+.side__tab{
+    color: white;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    height: 24px;
+    padding-left: 32px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+
+   margin-top: 12px;
+   margin-bottom: 12px;
+
+   transition: all 0.3s;
+
+   position: relative;
+   
+}
+
+.side__handles{
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    margin-left: 61px;
+    margin-right: 61px;
+    color: white;
+    margin-top: 90%;
+}
+
+.side__handles>div>a{
+    color: white;
+}
+
+.mobile__active{
+
+    background-image: linear-gradient(to right, #550962 , #d03893);
+    border-left: 10px solid #821169;
+    height: 24px;
+    width: 100%;
+    padding-left: 32px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+    
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 9;
+}

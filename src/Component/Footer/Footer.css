@@ -1,0 +1,274 @@
+footer {
+  background-image: linear-gradient(to right, #350844, #3e3769);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+}
+
+.inname {
+  padding-top: 2.5rem;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 117px;
+  padding-bottom: 30px;
+}
+
+.inslog {
+  width: 121px;
+  height: 117px;
+  object-fit: contain;
+}
+.iiitv-name {
+  padding-left: 61px;
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.links {
+  flex-direction: column;
+  display: flex;
+}
+
+.linkcon {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-left: 100px;
+}
+.footerlin {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linkna {
+  width: 103px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.conna {
+  width: 103px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.link,
+.clink,
+.p-dev {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.con-details {
+  display: inline;
+  opacity: 0.7;
+}
+
+.underline {
+  background-color: #681883;
+  border: none;
+  height: 0.5vh;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.lastline {
+  background-color: #681883;
+  border: none;
+  border-radius: 4px;
+  height: 0.65vh;
+  width: 93%;
+}
+
+.dev {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.dot,
+.cc {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cc {
+  padding-left: 40px;
+}
+.dotlogo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.conna,
+.linkna {
+  padding-right: 2.5rem;
+  height: 5vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  padding-left: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  width: max-content;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link-drop {
+  flex-direction: row;
+  display: flex;
+}
+
+/* .link-toogle {
+  display: none;
+} */
+.disclaimer{
+  width: 93%;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 8px;
+  color: white;
+  margin: auto;
+  display: inline-flex;
+  justify-content: center;
+}
+
+/* --------------------------------------------- */
+
+@media only screen and (max-width: 800px) {
+  footer {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .inslog {
+    width: 60px;
+    height: 61px;
+    padding-left: 34px;
+    object-fit: contain;
+  }
+
+  .iiitv-name {
+    padding-left: 24px;
+    padding-right: 35px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+
+  .inname {
+    padding-top: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 117px;
+    padding-bottom: 30px;
+  }
+
+  .cc {
+    padding-left: 10px;
+  }
+
+  .linkcon {
+    padding-top: 0px;
+    flex-direction: column;
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    align-items: flex-start;
+    padding-bottom: 0px;
+    margin-left: 15px;
+  }
+
+  .footerlin {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .linkna,
+  .conna {
+    padding: 0px;
+  }
+  .conna {
+    width: 140px;
+    padding-left: 0px;
+  }
+
+  .contact,
+  .links {
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  /* .links {
+    display: none;
+  } */
+  .link-display {
+    max-width: 100px;
+    display: flex;
+  }
+  /* .link-toogle {
+    display: block;
+    color: #ffffff;
+    cursor: pointer;
+  } */
+}
+
+@media only screen and (max-width: 500px) {
+  .linkcon {
+    padding-left: 0px;
+  }
+}

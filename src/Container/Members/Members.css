@@ -1,0 +1,47 @@
+.members {
+  min-height: 80vh;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 224px;
+  row-gap: 84px;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin: 40px auto 84px;
+}
+
+.members>.lds-facebook{
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) and (min-width: 1080px) {
+  .members {
+    column-gap: 199.11px;
+    row-gap: 74.66px;
+    margin-bottom: 74.66px;
+  }
+}
+
+@media (max-width: 1080px) and (min-width: 800px) {
+  .members {
+    column-gap: 168px;
+    row-gap: 63px;
+    margin-bottom: 63px;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+  .members {
+    column-gap: 123.2px;
+    row-gap: 46.2px;
+    margin-bottom: 46.2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .members {
+    row-gap: 48px;
+    margin: 23px auto 84px auto;
+  }
+}
