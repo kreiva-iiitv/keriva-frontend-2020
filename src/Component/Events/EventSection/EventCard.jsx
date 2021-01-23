@@ -37,7 +37,7 @@ function EventCard(props) {
                             <td className="EventCard__profile__container__table__desc">{props.coConvenor.first_name} {props.coConvenor.last_name}</td>
                         </tr>
                         <tr className="EventCard__profile__container__table__row">
-                            <th className="EventCard__profile__container__table__head">Committe-Cordinator</th>
+                            <th className="EventCard__profile__container__table__head">Committe-Coordinator</th>
                             <td className="EventCard__profile__container__table__desc">{props.committeCordinator.first_name} {props.committeCordinator.last_name}</td>
                         </tr>
                     </table>
