@@ -20,10 +20,12 @@ function Header({ opened }) {
           </div>
         </NavLink>
 
+        <NavLink to="/">
         <div>
           <img className="tabs__logo" src={logo} alt="dates" />
           <p className="tabs__logo--date">31st Jan 2021 - 14th Feb 2021</p>
         </div>
+        </NavLink>
 
         <NavLink style={{display:'flex',color:'white',textDecoration:'none'}} to="/members">
           <div className="tabs__logo__tab ">
