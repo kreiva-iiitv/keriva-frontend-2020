@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
+Disallow:
 
 Sitemap: https://kreiva.iiitvadodara.ac.in/sitemap.xml
