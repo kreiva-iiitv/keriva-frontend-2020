@@ -7,3 +7,5 @@ src/Component/Event/ComponentName/index.jsx
 src/Component/Event/ComponentName/ComponentName.css
 ```
 Css Architecture to be followed : https://blog.piyushpawar.dev/the-bem-architecture/
+
+Find deployed link here : https://kreiva2021.in/
