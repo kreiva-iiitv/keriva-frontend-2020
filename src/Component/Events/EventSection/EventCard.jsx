@@ -50,7 +50,7 @@ function EventCard(props) {
                             </ul>
                         </div>
                         <div className="EventCard__profile__container__right__register">
-                            <a target="_blank" rel="noopener noreferrer" href={props.googleLink} className="EventCard__profile__container__right__register__button">Register</a>
+                            <a target="_blank" rel="noopener noreferrer" href={props.googleLink} className="EventCard__profile__container__right__register__button">Submit</a>
                         </div>
                     </div>
                 </div>
