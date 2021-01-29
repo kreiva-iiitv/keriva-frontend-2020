@@ -54,7 +54,9 @@ function EventCard(props) {
                         </div>
                     </div>
                 </div>
-                <div><a style={{ color: 'white' }} target="_blank" rel="noopener noreferrer" href={props.rules}>Rules and regulation</a></div>
+                <div className="EventCard__profile__container__right__rules">
+                    <a style={{ color: 'white' }} target="_blank" rel="noopener noreferrer" href={props.rules} className="EventCard__profile__container__right__rules__button">Rules and regulation</a>
+                </div>
             </div>
 
             <div className="onlyMobile">
