@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import dotlogo from "../../Assets/Images/dot.png";
-import cclogo from "../../Assets/Images/cclogo.png";
+import cclogo from "../../Assets/Images/cc.svg";
 
 //styles import
 import './Footer.css';
