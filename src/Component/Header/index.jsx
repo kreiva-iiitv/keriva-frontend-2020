@@ -33,7 +33,7 @@ function Header({ opened }) {
           </div>
         </NavLink>
 
-        <a style={{display:'flex',color:'white',textDecoration:'none'}} href="https://kreiva.tk/media/brochure.pdf">
+        <a style={{display:'flex',color:'white',textDecoration:'none'}} href="https://gaurkrishna.pythonanywhere.com/media/brochure.pdf">
           <div className="tabs__logo__tab ">
             BROCHURE
           </div>
