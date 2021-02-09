@@ -17,7 +17,7 @@ const Members = () => {
   useEffect(() => {
     async function fetchAPI() {
       setIsLoading(true);
-      const res = await fetch("https://kreiva.tk/team/");
+      const res = await fetch("https://gaurkrishna.pythonanywhere.com/team/");
       const data = await res.json();
       setTeams(data.Team);
       setIsLoading(false);
