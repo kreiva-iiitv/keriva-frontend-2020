@@ -11,7 +11,7 @@ const CardContainer = () => {
     useEffect(() => {
         async function fetchAPI() {
             setIsLoading(true);
-            const res = await fetch('https://kreiva.tk/event/');
+            const res = await fetch('https://gaurkrishna.pythonanywhere.com/event/');
             const data = await res.json()
             setEventData(data);
             setIsLoading(false);
